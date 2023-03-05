@@ -27,7 +27,12 @@
   }
   
   /* Navbar */
-  
+ .profile-logo{
+  width: 35px;
+  height: 35px;
+  color: white;
+ }
+
   .navbar {
     position: fixed !important;
     top: 0 !important;
@@ -35,12 +40,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color: var(--nav-bg-color);
+    background: #959595;
+    background: -moz-linear-gradient(-45deg, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+    background: -webkit-linear-gradient(-45deg, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+    background: linear-gradient(135deg, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     z-index: 99;
     width: 100%;
-    opacity: 0.4;
   }
   
   .nav-links {
