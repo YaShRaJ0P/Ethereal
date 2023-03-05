@@ -70,11 +70,8 @@
     }
   .logo {
      font-weight: 600;
-     font-size: 28px;
+     font-size: 28px;color: var(--logo-span-color);
   }
-  .logo {
-      color: var(--logo-span-color);
-    }
    @media (max-width: 949px) {
       .navbar {
         flex-direction: column;
