@@ -75,7 +75,7 @@
   .logo {
       color: var(--logo-span-color);
     }
-   @media (max-width: 768px) {
+   @media (max-width: 949px) {
       .navbar {
         flex-direction: column;
       }
@@ -91,14 +91,21 @@
       }
     }
 
-  @media (max-width: 371px) {
+  @media (max-width: 476px) {
       
       .nav-li {
         margin: 0 1rem;
-        font-size: 12px;
+        font-size: 10px;
+      }
+      .nav-links{
+        margin-left: -40px !important;
       }
       .latest-technology{
         margin-top: 119px !important;
+      }
+      .profile-logo{
+        width: 16px;
+        height: 16px;
       }
     }
   /*Latest Technology*/

@@ -9,39 +9,168 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@700&family=Lora:wght@700&family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Labrada:wght@700&family=Lora:wght@700&family=PT+Serif&display=swap');
+
         body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 .title{
   text-decoration: underline;
 }
+
+.profile-logo{
+  width: 35px;
+  height: 35px;
+  color: white;
+ }
+
+  .navbar {
+    position: fixed !important;
+    top: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: #959595;
+    background: -moz-linear-gradient(-45deg, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+    background: -webkit-linear-gradient(-45deg, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+    background: linear-gradient(135deg, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 99;
+    width: 100%;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  .nav-li {
+    font-family: 'Roboto Slab', serif !important;
+      list-style: none;
+      margin: 0 2.5rem;
+      font-weight: 600;
+      font-size: 22px;
+    }
+  .nav-li:hover {
+      color: var(--nav-link-hover);
+      cursor: pointer;
+    }
+    
+    .nav-li:active {
+      transform: scale(0.98);
+    }
+  .logo {
+     font-weight: 600;
+     font-size: 28px;
+  }
+  .logo {
+      color: var(--logo-span-color);
+    }
+   @media (max-width: 949px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .nav-links {
+        padding-top: 30px;
+      }
+      .nav-li {
+        margin: 0 1rem;
+        font-size: 16px;
+      }
+      .gradient{
+        margin-top: 137px !important;
+      }
+    }
+
+  @media (max-width: 476px) {
+      
+      .nav-li {
+        margin: 0 1rem;
+        font-size: 12px;
+      }
+      .gradient{
+        margin-top: 120px !important;
+      }
+      .nav-links{
+        margin-left: -38px;
+      }
+      .profile-logo{
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+@media (max-width: 838px ){
+.image{width: 180px !important; height: 170px !important;}
+.floatright{width: 100% !important;}
+}
+
+@media (max-width: 601px ){
+.image{
+  width: 280px !important; height: 200px !important;}
+}
 .content1{
   color: beige;
-  margin: 19px 5vw;
+  padding: 19px 5vw;
   text-align: left;
   font-size: 17px;
 }
-.w3-red{padding: 0px 0;}
+.gradient{
+  padding: 0 0;
+  background-image: linear-gradient(135deg, #fd7e14 5%, #ffd43b 95%);
+  color: rgb(249, 14, 14);
+  margin-top: 67px;
+}
 .image{
   width: 250px; height: 200px;
 }
 .color{
   background-color: #000000;
 }
+.floatright{
+  float: right;
+  width: 600px;
+  height: 400px;
+  padding: 0 0.5vw;
+}
     </style>
 </head>
 <body>
+  <!--Navbar-->
+  <nav class="navbar">
+    <h1 class="logo"><span>Le</span> Go</h1>
+    <ul class="nav-links">
+      <li class="nav-li">Home</li>
+      <li class="nav-li">Overview</li>
+      <li class="nav-li">Products</li>
+      <li class="nav-li">Contact </li>
+      <li class="nav-li"><img src="/images/user (1).png" alt="" class="profile-logo"></li>
+      <i class="fi fi-rr-user"></i>
+    </ul>
+  </nav>
+
+
    <!-- Header -->
-<div class="w3-container w3-red w3-center" >
+<div class="w3-container gradient w3-center" >
   <h1 class="title">50 Simple Ideas To Begin Sustainable Living</h1>
+  <img src="/images/issuensol.jpg" alt="" class=" floatright">
+
   <p class="content1">If the end of the world would depend on you, would you save it? This is a tough question, yet we hold this responsibility
     every second of every day. We live in a world that needs our help to keep surviving, but are we doing enough?
   <br/><br/>
   Here I will share with you some of the best ways in how to live sustainability and adopt a more
   sustainable lifestyle that will make a difference in the world that we all share.
   </p>
+  
   <h1 class="title">What Living A Sustainable Lifestyle Means</h1>
   <p class="content1">
     
@@ -65,7 +194,7 @@ change the lives of future generations to come.
 We are all here due to the man heroic actions that generations before us took upon them to ensure that we could have a
 future, so isn't it our obligation to ensure that the next ones will have a standing chance as well?
   </p>
-  
+  <img src="/images/home.jpg" alt="" width="100%" height="700px">
   <h1 class="title">The Importance of Sustainable Living</h1>
   <p class="content1">
     The answer is quite simple andstraightforward we need our planet to keep being able to resource us with the basic things
@@ -80,6 +209,7 @@ future, so isn't it our obligation to ensure that the next ones will have a stan
     Things like the enormous and misplaced amount of garbage disposal, the high demand for fossil fuel (that provide us with
 electricity). Excessive carbon print and wrongly disposal of toxic chemicals into the sea, are just some of the human-made acts
 against the environment. Little but incredible impactful actions can lead to : <br/> <br/>
+<img src="/images/recycle.jpg" alt="" class="floatright">
 • Health problems, which have been more and more common. <br/>
 • Climate change, for example, the rising levels of the water. <br/>
 • Lack of resources from mother nature, without water and food, we can't survive. <br/><br/>
