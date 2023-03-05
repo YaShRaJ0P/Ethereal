@@ -61,8 +61,8 @@
       font-size: 22px;
     }
   .nav-li:hover {
-      color: var(--nav-link-hover);
-      cursor: pointer;
+    color: rgb(246, 235, 25);
+    cursor: pointer;
     }
     
     .nav-li:active {
