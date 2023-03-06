@@ -176,6 +176,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.card-text{
+  font-size: 15px;
+}
 .card-heading{
   font-family: 'Lora', serif;
   text-align: center;
