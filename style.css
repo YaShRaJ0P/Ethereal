@@ -216,7 +216,7 @@
   width: 100%;
   background: #4070f4;
   border-radius: 12px;
-  padding: 30px;
+  padding: 25px;
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
   scroll-padding: 30px;
@@ -247,7 +247,7 @@
   border-radius: 10px;
   background: #4070f4;
 }
-.image-div .profile {
+.image-div .technology-image {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -264,9 +264,34 @@
   color: #333;
   text-align: center;
 }
-.profile{
+.technology-image{
   margin-bottom: -5px;
   border-radius: 10px;
+}
+.card-div:hover{
+  cursor: pointer;
+}
+
+/* CSS */
+.buy {
+  color: #fff;
+  margin-top: 5px;
+  padding: 10px 25px;
+  background-color: #07e3ee;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+text-align: center;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+.buy:hover{
+  background-color: #00ffd5;
 }
  /*Flip Card*/
  .card-div {
@@ -329,4 +354,71 @@
  }
 }
 
+/*Location*/
+#location{
+  margin: 10px;
+  text-align: center;
+}
+/*Nearby Stores*/
+.nearby-store{
+  background-color: #daf0a4;
+}
+.nearby-store-div{
+  padding: 15px 0;
+  text-align: center;
+}
+@media(max-width : 653px){
+  .nearby-store-div{
+    padding : 5% 10%;
+  }
+}
 
+
+/* CSS */
+.Search {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.Search:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.Search:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.Search:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.center{
+  text-align: center;
+}

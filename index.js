@@ -15,3 +15,14 @@ const settings = {
   };
   
   const swiper = new Swiper(".mySwiper", settings);
+//Search js
+function technologyopen(){
+  //Location js
+  let location = document.getElementById("location-input");
+  let locationvalue = location.value;
+  let locationtext = location.options[location.selectedIndex].text;
+
+  if(locationtext =="<--Select-->"){
+    alert("Enter The Location.");
+  }
+}
