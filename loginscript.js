@@ -139,28 +139,18 @@ jQuery.fn.putCursorAtEnd = function() {
 
 login.style.display='block';
 signup.style.display='none';
-resetpassword.style.display = 'none';
 document.getElementById("white").style.backgroundColor="#FFF";
 function resetpasswordfn(){
   login.style.display='none';
   signup.style.display='none';
-  resetpassword.style.display = 'block';
 }
 function loginfn(){
   login.style.display='block';
   signup.style.display='none';
-  resetpassword.style.display = 'none';
   document.getElementById("white").style.backgroundColor="#FFF";
 }
 function signupfn(){
   login.style.display='none';
   signup.style.display='block';
-  resetpassword.style.display = 'none';
   document.getElementById("white").style.backgroundColor="#d2d8d8";
-}
-function backfn(){
-  login.style.display='block';
-  signup.style.display='none';
-  resetpassword.style.display = 'none';
-  document.getElementById("white").style.backgroundColor="#FFF";
 }

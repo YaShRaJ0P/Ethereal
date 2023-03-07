@@ -425,11 +425,3 @@ body {
 	padding-bottom: 2px;
 	border-bottom: 1px solid rgba(246, 71, 71, 1);
 }
-
-#login, #signup, #resetpassword {
-  display: none;
-}
-
-#login.is-selected, #signup.is-selected, #resetpassword.is-selected {
-  display: block;
-}
