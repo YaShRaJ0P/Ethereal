@@ -121,7 +121,11 @@
 				  alert('Weak Password (Password should be atleast of 6 characters)');}
 			  else if(errorCode=='auth/invalid-email')
 			  {
-				  alert('Invalid Email');
+				  alert('Invalid Email Id');
+			  }
+			  else if(errorCode=='auth/email-already-in-use')
+			  {
+				  alert('This Email Id already exist');
 			  }
 				  else
 				  {
@@ -158,7 +162,7 @@
 				  alert('Wrong password.');}
 			  else if(errorCode=='auth/invalid-email')
 			  {
-				  alert('Invalid Email');
+				  alert('Invalid Email Id');
 			  }
 				  else
 				  {
