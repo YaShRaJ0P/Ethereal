@@ -125,6 +125,7 @@
 
 	  //----- Login code start	  
 	  document.getElementById("login-button").addEventListener("click", function() {
+		   event.preventDefault()
 		  var email =  document.getElementById("signin-email").value;
 		  var password = document.getElementById("signin-password").value;
 
@@ -140,11 +141,13 @@
 		  .catch((error) => {
 		    const errorCode = error.code;
 		    const errorMessage = error.message;
-			  if(errorCode=='auth/wrong-password'){
+			  if(errorCode=='auth/invalid-email')
+				  alert('Invalid Email');
+			 else if(errorCode=='auth/wrong-password'){
 				  alert('Wrong password.');}
 				  else
 				  {
-					  alert(erroeMessage);
+					  alert(errorMessage);
 				  }
 			  console.log(error);
 
