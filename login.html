@@ -125,7 +125,7 @@
 
 	  //----- Login code start	  
 	  document.getElementById("login-button").addEventListener("click", function() {
-		   
+		   event.preventDefault()
 		  var email =  document.getElementById("signin-email").value;
 		  var password = document.getElementById("signin-password").value;
 
