@@ -115,10 +115,20 @@
 		  })
 		  .catch((error) => {
 		    const errorCode = error.code;
-		    const errorMessage = error.message;		    
-		    console.log(errorMessage);
-		    alert(error);
-			  
+		    const errorMessage = error.message;
+			  if(errorCode=='auth/weak-password')
+			  {
+				  alert('Weak Password (Password should be atleast of 6 characters)');}
+			  else if(errorCode=='auth/invalid-email')
+			  {
+				  alert('Invalid Email');
+			  }
+				  else
+				  {
+					  alert(errorMessage);
+				  }
+			  console.log(error);
+
 		  });		  		  
 	  });
 	  //----- End
