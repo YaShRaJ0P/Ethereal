@@ -115,17 +115,9 @@
 		  })
 		  .catch((error) => {
 		    const errorCode = error.code;
-		    const errorMessage = error.message;
-			  if(errorCode=='auth/wrong-password'){
-				  alert('Wrong password.');}
-				  else
-				  {
-					  alert(erroeMessage);
-				  }
-			  console.log(error);
-		    
-		    //console.log(errorMessage);
-		    //alert(error);
+		    const errorMessage = error.message;		    
+		    console.log(errorMessage);
+		    alert(error);
 			  
 		  });		  		  
 	  });
@@ -148,8 +140,14 @@
 		  .catch((error) => {
 		    const errorCode = error.code;
 		    const errorMessage = error.message;
-		    console.log(errorMessage);
-		    alert(errorMessage);
+			  if(errorCode=='auth/wrong-password'){
+				  alert('Wrong password.');}
+				  else
+				  {
+					  alert(erroeMessage);
+				  }
+			  console.log(error);
+
 		  });		  		  
 	  });
 	  //----- End
