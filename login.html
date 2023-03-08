@@ -141,9 +141,9 @@
 		  .catch((error) => {
 		    const errorCode = error.code;
 		    const errorMessage = error.message;
-			  if(errorCode=='auth/invalid-email')
+			  if(errorCode=='auth/user-not-found')
 			  {
-				  alert('Invalid Email');}
+				  alert('Email ID is not found');}
 			 else if(errorCode=='auth/wrong-password'){
 				  alert('Wrong password.');}
 				  else
