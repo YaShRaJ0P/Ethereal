@@ -116,9 +116,17 @@
 		  .catch((error) => {
 		    const errorCode = error.code;
 		    const errorMessage = error.message;
-		    // ..
-		    console.log(errorMessage);
-		    alert(error);
+			  if(errorCode=='auth/wrong-password'){
+				  alert('Wrong password.');}
+				  else
+				  {
+					  alert(erroeMessage);
+				  }
+			  console.log(error);
+		    
+		    //console.log(errorMessage);
+		    //alert(error);
+			  
 		  });		  		  
 	  });
 	  //----- End
