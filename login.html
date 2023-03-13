@@ -112,12 +112,7 @@
 		    const user = userCredential.user;
 		    console.log(user);
 		    alert("Registration successfully!!");
-                     var userInfo = datab.push();
-    userInfo.set({
-        name: document.getElementById("signup-username").value;
-        email : document.getElementById("signup-email").value;
-        password : document.getElementById("signup-password").value;
-    });
+                     
 		    // ...
 		  })
 		  .catch((error) => {
@@ -140,7 +135,8 @@
 				  }
 			  console.log(error);
 
-		  });		  		  
+		  });	
+	  		  
 	  });
 	  //----- End
 
@@ -176,8 +172,13 @@
 					  alert(errorMessage);
 				  }
 			  console.log(error);
-
-		  });		  		  
+                    });		
+  		  var userInfo=datab.push();
+    userInfo.set({
+        name: document.getElementById("signup-username").value;
+        email : document.getElementById("signup-email").value;
+        password : document.getElementById("signup-password").value;
+    });
 	  });
 	  //----- End
 
