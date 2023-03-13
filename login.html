@@ -104,7 +104,7 @@
 		  event.preventDefault()
 		  var email =  document.getElementById("signup-email").value;
 		  var password = document.getElementById("signup-password").value;
-                  var userId = document.getElementById("signup-username").value;
+                  
 		  //For new registration
 		  createUserWithEmailAndPassword(auth, email, password)
 		  .then((userCredential) => {
