@@ -99,12 +99,12 @@
   const analytics = getAnalytics(app);
   const auth = getAuth();
   //console.log(app);
-	//----- New Registration code start
-    var datab = firebase.database().ref('data');	  
+	//----- New Registration code start	  
 	  document.getElementById("signup-button").addEventListener("click", function() {
 		  event.preventDefault()
 		  var email =  document.getElementById("signup-email").value;
 		  var password = document.getElementById("signup-password").value;
+                  var userId = document.getElementById("signup-username").value;
 		  //For new registration
 		  createUserWithEmailAndPassword(auth, email, password)
 		  .then((userCredential) => {
@@ -136,7 +136,17 @@
 			  console.log(error);
 
 		  });	
-	  		  
+              
+	  		  import { getDatabase, ref, set } from "firebase/database";
+
+function writeUserData(userId, email) {
+  const db = getDatabase();
+  set(ref(db, 'users/' + userId), {
+    username: userId,
+    email: email,
+    
+  });
+}
 	  });
 	  //----- End
 
@@ -173,12 +183,7 @@
 				  }
 			  console.log(error);
                     });		
-  		  var userInfo=datab.push();
-    userInfo.set({
-        name: document.getElementById("signup-username").value;
-        email : document.getElementById("signup-email").value;
-        password : document.getElementById("signup-password").value;
-    });
+  		
 	  });
 	  //----- End
 
