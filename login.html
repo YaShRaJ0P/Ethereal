@@ -100,7 +100,12 @@ import { getDatabase, ref, set } from "firebase/database";
   const auth = getAuth();
   //console.log(app);
 	
-
+function writeUserData(userId, email) {
+  const db = getDatabase();
+  set(ref(db, 'users/' + userId), {
+    email: email,
+  });
+}
 
 
 	//----- New Registration code start	  
@@ -114,12 +119,7 @@ import { getDatabase, ref, set } from "firebase/database";
 		  createUserWithEmailAndPassword(auth, email, password)
 		  .then((userCredential) => {
 		    // Signed in 
-			  function writeUserData(userId, email) {
-  const db = getDatabase();
-  set(ref(db, 'users/' + userId), {
-    email: email,
-  });
-}
+			  
 		    const user = userCredential.user;
 		    console.log(user);
 		    alert("Registration successfully!!");
