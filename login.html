@@ -99,7 +99,8 @@ import { getDatabase, ref, set } from "firebase/database";
   const analytics = getAnalytics(app);
   const auth = getAuth();
   //console.log(app);
-	
+var userId = document.getElementById("signup-username").value;
+  var email =  document.getElementById("signup-email").value;
 function writeUserData(userId, email) {
   const db = getDatabase();
   set(ref(db, 'users/' + userId), {
