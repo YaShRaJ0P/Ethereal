@@ -35,7 +35,7 @@ function isMobileTablet(){
           check = true;
   })(navigator.userAgent||navigator.vendor||window.opera);
 if(check){
-  click2flip.style.display="inline-block";
+  click2flip.style.display="none";
 }
 else{
   click2flip.style.display="none";
