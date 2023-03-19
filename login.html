@@ -78,7 +78,7 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
 	import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
-
+import { getDatabase, ref, set } from "firebase/database";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -99,9 +99,20 @@
   const analytics = getAnalytics(app);
   const auth = getAuth();
   //console.log(app);
+var userId = document.getElementById("signup-username").value;
+  var email =  document.getElementById("signup-email").value;
+function writeUserData(userId, email) {
+  const db = getDatabase();
+  set(ref(db, 'users/' + userId), {
+    email: email,
+  });
+}
+
+
 	//----- New Registration code start	  
 	  document.getElementById("signup-button").addEventListener("click", function() {
 		  event.preventDefault()
+		  
 		  var email =  document.getElementById("signup-email").value;
 		  var password = document.getElementById("signup-password").value;
                   
@@ -109,6 +120,7 @@
 		  createUserWithEmailAndPassword(auth, email, password)
 		  .then((userCredential) => {
 		    // Signed in 
+			  
 		    const user = userCredential.user;
 		    console.log(user);
 		    alert("Registration successfully!!");
