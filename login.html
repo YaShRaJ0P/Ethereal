@@ -101,11 +101,11 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0
   const analytics = getAnalytics(app);
   const auth = getAuth();
   //console.log(app);
-  function writeUserData(email) {
+  function writeUserData(em) {
   const db = getDatabase();
-  set(ref(db, "Profile/" + email), {
+  set(ref(db, "Profile/" + em), {
    // UserName:userId.value,
-    Email: email,
+    Email: em,
 
   });
 }
