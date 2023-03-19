@@ -95,12 +95,13 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0
   measurementId: "G-JP8SLCM9WD"
 };
 
- const db = getDatabase();
+
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const auth = getAuth();
   //console.log(app);
+  const db = getDatabase();
 
 var userId = document.getElementById("signup-username").value;
 var email =  document.getElementById("signup-email").value;
