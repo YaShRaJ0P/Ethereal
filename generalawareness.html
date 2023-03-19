@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap');
@@ -21,6 +23,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Labrada:wght@700&family=Lora:wght@700&family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap');
+
         body,h1,h2,h3,h4,h5,h6 
         {font-family: "Lato", sans-serif}
 .w3-bar,h1,button 
@@ -44,6 +47,7 @@
   padding: 19px 5vw;
   text-align: left;
   font-size: 20px;
+  font-weight: 600;
 }
 .w3-padding-32{
   color: #442020;
@@ -165,6 +169,111 @@ box-shadow: rgb(255, 222, 189) 0px 10px 20px, #ffc1c1 0px 5px 5px ;
 .left-margin{
 margin-right: 10px;
 }
+/*Footer*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+ul{
+	list-style: none;
+}
+.footer{
+  background-color: #7a1717;
+    padding-top: 50px;
+}
+.footer-col{
+   width: 25% !important;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ffc3a0;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #2f0505;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50% !important;
+    margin-bottom: 30px !important;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100% !important;
+}
+}
+.lowercase{
+  text-transform: lowercase !important ;
+}
+.copyright{
+  background-color: rgb(38, 7, 7);
+  color: white;
+  padding: 10px 0;
+  padding-left: 10%;
+}
 </style>
 </head>
 <body>
@@ -176,7 +285,7 @@ margin-right: 10px;
       <li class="nav-li">Overview</li>
       <li class="nav-li">Products</li>
       <li class="nav-li">Contact</li>
-      <li class="nav-li"><img src="images/profile-icon.png" alt="" class="profile-logo"></li>
+      <li class="nav-li"><a href="login.html"><img src="images/profile-icon.png" alt="" class="profile-logo"/></a></li>
     </ul>
   </nav>
 
@@ -370,7 +479,7 @@ dry naturally, you will also impact the environment. Using an eco-friendly shamp
       <div class="w3-twothird padding">
         <h1 class="general-suggest-title">9. Reduce your water usage.</h1>
         <h5 class="w3-padding-32 padding">The world is demanding more and more from nature, a simple gesture of turning off the water while you brush your teeth con
-already make a big difference. If you are using the water, turn off the tap. There are too many people in this world without water.TimberLine® Woodgrain HDPE.
+already make a big difference. If you are using the water, turn off the tap. There are too many people in this world without water.
 </h5>
       </div>
   
@@ -646,8 +755,8 @@ to local waste recycling programs.
       </div>
   
       <div class="w3-twothird padding">
-        <h1 class="general-suggest-title">26th. Share products with your family members.</h1>
-        <h5 class="w3-padding-32 padding">If you can,instead of buying things like differents shampoos and deodorants individually,purchase one that can be shared by everyone.
+        <h1 class="general-suggest-title">26. Share products with your family members.</h1>
+        <h5 class="w3-padding-32 padding">If you can,instead of buying things like differents shampoos and deodorants individually, purchase one that can be shared by everyone.
        </h5>
       </div>
     </div>
@@ -708,33 +817,59 @@ to local waste recycling programs.
       </div>
   
       <div class="w3-twothird padding">
-        <h1 class="general-suggest-title"> 30.Use multipurpose bathroom products.</h1>
+        <h1 class="general-suggest-title"> 30. Use multipurpose bathroom products.</h1>
         <h5 class="w3-padding-32 padding">Instead of using many detergent to clean your bathroom,buy just one multipurpose that can do all the jobs in one.
        </h5>
       </div>
     </div>
   </div>
-    
-    
-    
-    
-  
-  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-      <h1 class="w3-margin w3-xlarge">Reduce,Reuse,Recycle</h1>
-  </div>
-  
+
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-    <div class="w3-xlarge w3-padding-32">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-   </div>
-   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  </footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Miscellaneous</h4>
+          <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="#"class="lowercase">xyz@gmail.com</a></li>
+            <li><a href="#"class="lowercase">abc@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      ©2023-27 : All Rights Reserved
+    </div>
+ </footer>
+
 
 </body>
 </html>

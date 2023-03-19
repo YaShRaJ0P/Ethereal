@@ -33,7 +33,11 @@
   height: 35px;
   color: white;
  }
-
+.style-none{
+  font-family: 'Roboto Slab', serif !important;
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
   .navbar {
     position: fixed !important;
     top: 0 !important;
@@ -47,7 +51,6 @@
     z-index: 99;
     width: 100%;
   }
-  
   .nav-links {
     display: flex;
   }
@@ -57,9 +60,11 @@
       margin: 0 2.5rem;
       font-weight: 600;
       font-size: 22px;
+      color: white;
+
     }
   .nav-li:hover {
-    color: rgb(246, 235, 25);
+    color: #2b265d;
     cursor: pointer;
     }
     
@@ -81,7 +86,7 @@
         margin: 0 1rem;
         font-size: 16px;
       }
-      .latest-technology{
+      #latest-technology{
         margin-top: 125px !important;
       }
     }
@@ -95,7 +100,7 @@
       .nav-links{
         margin-left: -40px !important;
       }
-      .latest-technology{
+      #latest-technology{
         margin-top: 119px !important;
       }
       .profile-logo{
@@ -121,7 +126,7 @@
     height: 400px;
    }
 
-.latest-technology{
+#latest-technology{
   margin-top: 65px;
 }
 
@@ -197,7 +202,7 @@
   font-family: 'Lora', serif;
   text-align: center;
 }
-.technology-slider {
+#technology-slider {
   min-height: 500px;
   position: relative;
   align-items: center;
@@ -440,7 +445,7 @@ html {
   text-align: center;
 }
 /*Nearby Stores*/
-.nearby-store{
+#nearby-store{
   background-color: #d3f57f;
 }
 .nearby-store-div{
@@ -535,7 +540,7 @@ ul{
 }
 .footer{
   background-color: #082b34;
-    padding: 70px 0;
+    padding-top: 70px;
 }
 .footer-col{
    width: 25% !important;
@@ -609,4 +614,10 @@ ul{
   text-transform: lowercase !important ;
 }
 
+.copyright{
+  background-color: rgb(6, 1, 27);
+  color: white;
+  padding: 10px 0;
+  padding-left: 10%;
+}
 

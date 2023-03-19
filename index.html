@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"id="html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,15 +12,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<body onload="isMobileTablet()">
+<body onload="isMobileTablet()" >
 
     <nav class="navbar">
         <h1 class="logo"><span>Le</span> Go</h1>
         <ul class="nav-links">
-          <li class="nav-li" >Home</li>
-          <li class="nav-li">Overview</li>
-          <li class="nav-li">Products</li>
-          <li class="nav-li">Contact </li>
+          <li class="nav-li"><a href="#html" class="style-none">Home</a></li>
+          <li class="nav-li"><a href="#overview-technology" class="style-none">Overview</a></li>
+          <li class="nav-li"><a href="#technology-slider" class="style-none">Products</a></li>
+          <li class="nav-li"><a href="#nearby-store" class="style-none">Map</a></li>
           <li class="nav-li" ><a href="login.html"><img src="images/profile-icon.png" alt="" class="profile-logo"/></li></a>
         </ul>
       </nav>
@@ -29,7 +29,7 @@
     <img src="images/message.png" width="35px" height="35px" alt="Forum" />
   </button>
 
-      <section class="latest-technology">
+      <section id="latest-technology">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -71,9 +71,10 @@
       </section>
 
 
-      <section class="overview-technology">
+      <section id="overview-technology">
         <main role="main">
           <div class="album py-5 bg-lightblue">
+            <h1 class="technology-slider-title">Tips For Sustainable Living</h1>
             <div class="container">
               <div class="row">
                 <div class="col-md-4">
@@ -276,8 +277,8 @@
       </section>
 
 
-      <section class="technology-slider">
-        <h1 class="technology-slider-title">PRODUCTS</h1>
+      <section id="technology-slider">
+        <h1 class="technology-slider-title">Products</h1>
         <div id="click2flip">
           Click image to flip.
         </div>
@@ -378,9 +379,9 @@
       </div>
       </section>
 
-      <section class="nearby-store">
+      <section id="nearby-store">
         <div class="nearby-store-div">
-        <h3 class="h3">Find Stores of Sustainable Technologies nearby:</h3>
+          <h3 class="technology-slider-title">Find Stores Of Sustainable Technologies Nearby :</h3>
         <label name="location" id="location">Enter Your Location</label> <select type="text" id="location-input" for="location">
           <option value="Not Selected"><--Select--></option>
           <option value="Agartala">Agartala</option>
