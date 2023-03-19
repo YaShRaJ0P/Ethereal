@@ -99,6 +99,8 @@ import { getDatabase, ref, set } from "firebase/database";
   const analytics = getAnalytics(app);
   const auth = getAuth();
   //console.log(app);
+document.getElementById("signup-button").addEventListener("click", function() {
+event.preventDefault()
 var userId = document.getElementById("signup-username").value;
   var email =  document.getElementById("signup-email").value;
 function writeUserData(userId, email) {
@@ -107,6 +109,7 @@ function writeUserData(userId, email) {
     email: email,
   });
 }
+})
 
 
 	//----- New Registration code start	  
