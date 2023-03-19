@@ -111,8 +111,8 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0
 }
 document.getElementById("signup-button").addEventListener("click", function() {
 //var userId = document.getElementById("signup-username").value;
-var email =  document.getElementById("signup-email").value;
-writeUserData("Hi")
+var ema =  document.getElementById("signup-email").value;
+writeUserData(ema)
 .then(()=>{
   alert("Data stored successful ");
 }).catch((error) => {
