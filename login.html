@@ -101,23 +101,24 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0
   const analytics = getAnalytics(app);
   const auth = getAuth();
   //console.log(app);
-
-var userId = document.getElementById("signup-username").value;
-var email =  document.getElementById("signup-email").value;
-function writeUserData() {
+  function writeUserData(userId,email) {
   
   set(ref(db, "Profile/" + userId.value), {
     UserName:userId.value,
     Email: email.value,
 
-  })
+  })}
+document.getElementById("signup-button").addEventListener("click", function() {
+var userId = document.getElementById("signup-username").value;
+var email =  document.getElementById("signup-email").value;
+writeUserData(userId,email)
 .then(()=>{
   alert("Data stored successful ");
 }).catch((error) => {
  alert("Unsuccessful, error"+error);
 });
 }
-document.getElementById("signup-button").addEventListener("click", writeUserData());
+
 
 
 	//----- New Registration code start	  
