@@ -95,14 +95,14 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0
   measurementId: "G-JP8SLCM9WD"
 };
 
- const db = getDatabase();
+
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const auth = getAuth();
   //console.log(app);
   function writeUserData(userId,email) {
-  
+  const db = getDatabase();
   set(ref(db, "Profile/" + userId.value), {
     UserName:userId.value,
     Email: email.value,
@@ -117,7 +117,7 @@ writeUserData(userId,email)
 }).catch((error) => {
  alert("Unsuccessful, error"+error);
 });
-}
+})
 
 
 
