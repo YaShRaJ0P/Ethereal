@@ -106,7 +106,7 @@ var userId = document.getElementById("signup-username").value;
   var email =  document.getElementById("signup-email").value;
 function writeUserData(userId, email) {
   
-  set(ref(db, "Profile" + userId.value), {
+  set(ref(db, "Profile/" + userId.value), {
     UserName:userId.value
     Email: email.value,
 
