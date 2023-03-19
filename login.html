@@ -107,7 +107,8 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0
     UserName:userId.value,
     Email: email.value,
 
-  })}
+  });
+}
 document.getElementById("signup-button").addEventListener("click", function() {
 var userId = document.getElementById("signup-username").value;
 var email =  document.getElementById("signup-email").value;
@@ -117,7 +118,7 @@ writeUserData(userId,email)
 }).catch((error) => {
  alert("Unsuccessful, error"+error);
 });
-})
+});
 
 
 
