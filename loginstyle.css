@@ -71,7 +71,6 @@ body {
   background: rgb(255 198 198 / 90%);
   z-index: 3;
   overflow-y: auto;
-  cursor: pointer;
   visibility: visible;
 }
 .user-modal.is-visible {
