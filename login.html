@@ -109,7 +109,8 @@ document.getElementById("signup-button").addEventListener("click", function() {
 event.preventDefault()
 var userId = document.getElementById("signup-username").value;
 var email =  document.getElementById("signup-email").value;
-
+console.log(userId);
+console.log(email);
 writeUserData(email,userId);
 })
 
