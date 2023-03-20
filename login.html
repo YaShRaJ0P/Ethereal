@@ -70,7 +70,7 @@
 
 </body>
 <script type="module">
-	var errorcheck ="";
+	
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
@@ -106,16 +106,6 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0
 	Username: us,
   });
 }
-document.getElementById("signup-button").addEventListener("click", function() {
-event.preventDefault()
-var userId = document.getElementById("signup-username").value;
-var email =  document.getElementById("signup-email").value;
-console.log(userId);
-console.log(email);
-if(errorcheck !="error"){
-writeUserData(email,userId);}
-})
-
 
 
 	//----- New Registration code start	  
@@ -133,7 +123,11 @@ writeUserData(email,userId);}
 		    const user = userCredential.user;
 		    console.log(user);
 		    alert("Registration successfully!!");
-                     
+			var userId = document.getElementById("signup-username").value;
+var email =  document.getElementById("signup-email").value;
+console.log(userId);
+console.log(email);
+writeUserData(email,userId);
 		    // ...
 		  })
 		  .catch((error) => {
@@ -142,25 +136,19 @@ writeUserData(email,userId);}
 			  if(errorCode=='auth/weak-password')
 			  {
 				  alert('Weak Password (Password should be atleast of 6 characters)');
-					var errorcheck ="error";
+
 				}
 			  else if(errorCode=='auth/invalid-email')
 			  {
 				  alert('Invalid Email Id');
-				  var errorcheck ="error";
-
 			  }
 			  else if(errorCode=='auth/email-already-in-use')
 			  {
 				  alert('This Email Id already exist');
-				  var errorcheck ="error";
-
 			  }
 				  else
 				  {
 					  alert(errorMessage);
-					  var errorcheck ="error";
-
 				  }
 			  console.log(error);
 
