@@ -97,22 +97,19 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0
   const analytics = getAnalytics(app);
   const auth = getAuth();
   //console.log(app);
-  function writeUserData(userId,email) {
+  function writeUserData(em) {
   const db = getDatabase();
-  set(ref(db, "Profile/" + userId.value), {
-    UserName:userId.value,
-    Email: email.value,
+  set(ref(db, "Profile/" + em), {
+   // UserName:userId.value,
+    Email: em,
 
-  })}
+  });
+}
 document.getElementById("signup-button").addEventListener("click", function() {
-var userId = document.getElementById("signup-username").value;
+event.preventDefault()
+//var userId = document.getElementById("signup-username").value;
 var email =  document.getElementById("signup-email").value;
-writeUserData(userId,email)
-.then(()=>{
-  alert("Data stored successful ");
-}).catch((error) => {
- alert("Unsuccessful, error"+error);
-});
+writeUserData("Sa");
 })
 
 
