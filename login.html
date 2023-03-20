@@ -105,7 +105,7 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0
   const db = getDatabase();
   set(ref(db, "Profile/" + em), {
    // UserName:userId.value,
-    Email: em,
+    Email: em.value,
 
   });
 }
