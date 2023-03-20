@@ -70,6 +70,7 @@
 
 </body>
 <script type="module">
+	var errorcheck ="";
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
@@ -111,7 +112,8 @@ var userId = document.getElementById("signup-username").value;
 var email =  document.getElementById("signup-email").value;
 console.log(userId);
 console.log(email);
-writeUserData(email,userId);
+if(errorcheck !="error"){
+writeUserData(email,userId);}
 })
 
 
@@ -139,18 +141,26 @@ writeUserData(email,userId);
 		    const errorMessage = error.message;
 			  if(errorCode=='auth/weak-password')
 			  {
-				  alert('Weak Password (Password should be atleast of 6 characters)');}
+				  alert('Weak Password (Password should be atleast of 6 characters)');
+					var errorcheck ="error";
+				}
 			  else if(errorCode=='auth/invalid-email')
 			  {
 				  alert('Invalid Email Id');
+				  var errorcheck ="error";
+
 			  }
 			  else if(errorCode=='auth/email-already-in-use')
 			  {
 				  alert('This Email Id already exist');
+				  var errorcheck ="error";
+
 			  }
 				  else
 				  {
 					  alert(errorMessage);
+					  var errorcheck ="error";
+
 				  }
 			  console.log(error);
 
