@@ -124,10 +124,9 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0
   const analytics = getAnalytics(app);
   const auth = getAuth();
   //console.log(app);
-  function writeUserData(em,us) {
+  function writeUserData(em,us,ui) {
   const db = getDatabase();
-  set(ref(db, "Profile/" + us), {
-   // UserName:userId.value,
+  set(ref(db, "Profile/" + ui), {
     Email: em,
 	Username: us,
   });
@@ -153,7 +152,7 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.10.0
 var email =  document.getElementById("signup-email").value;
 console.log(userId);
 console.log(email);
-writeUserData(email,userId);
+writeUserData(email,userId,user.uid);
 		    // ...
 		  })
 		  .catch((error) => {
