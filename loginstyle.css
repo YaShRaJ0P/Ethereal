@@ -432,3 +432,14 @@ body {
   z-index: 99;
   position: relative;
 }
+
+.inline-block{
+  display: inline-block;
+}
+.width{
+  margin-left: 20px !important;
+  width: 72.8% !important;
+}
+.image-label{
+  color: #505260;
+}
