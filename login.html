@@ -117,7 +117,7 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
   appId: "1:364462287774:web:8d828906de3565e8cb048f",
   measurementId: "G-JP8SLCM9WD"
 };
-var b=true;
+
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
@@ -127,8 +127,6 @@ var b=true;
   function writeUserData(em,us,ui) {
   const db = getDatabase();
 	  const dt=new Date();
-	  console.log(em);
-	  console.log(dt);
   set(ref(db, "Profile/" + ui), {
     Email: em,
 	Username: us,
@@ -154,7 +152,7 @@ var b=true;
                      writeUserData(email,userId,user.uid);
 		    console.log(user);
 		    alert("Registration successfully!!");
-			var success = true;
+		
 		    // ...
 		  })
 		  .catch((error) => {
@@ -229,7 +227,7 @@ var b=true;
         
           if(user)
           {
-             location.replace("index.html")
+             console.log(user.email)
 }
 });
 
