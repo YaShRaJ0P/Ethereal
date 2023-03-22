@@ -117,7 +117,7 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
   appId: "1:364462287774:web:8d828906de3565e8cb048f",
   measurementId: "G-JP8SLCM9WD"
 };
-
+var b=true;
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
@@ -127,6 +127,8 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
   function writeUserData(em,us,ui) {
   const db = getDatabase();
 	  const dt=new Date();
+	  console.log(em);
+	  console.log(dt);
   set(ref(db, "Profile/" + ui), {
     Email: em,
 	Username: us,
@@ -149,8 +151,6 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
 		    const user = userCredential.user;
                     var userId = document.getElementById("signup-username").value;
                     var email =  document.getElementById("signup-email").value;
-                     console.log(userId);
-                     console.log(email);
                      writeUserData(email,userId,user.uid);
 		    console.log(user);
 		    alert("Registration successfully!!");
@@ -226,7 +226,7 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
   		
 	  });
          onAuthStateChanged(auth,(user)=>{
-
+        
           if(user)
           {
              location.replace("index.html")
