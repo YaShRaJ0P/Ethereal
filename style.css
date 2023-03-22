@@ -129,6 +129,11 @@
 #latest-technology{
   margin-top: 65px;
 }
+#username{
+  display: inline-block;
+  font-size: 14px;
+  color: white;
+}
 
 /*Overview*/
 
