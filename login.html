@@ -225,17 +225,12 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
                     });		
   		
 	  });
-	  //----- End
+	  const user =auth.currentUser();
          onAuthStateChanged(auth,(user)=>{
 
           if(user)
           {
-var userId = document.getElementById("signup-username").value;
-var email =  document.getElementById("signup-email").value;
-           if(email==user.email)       
-      {writeUserData(email,userId,user.uid);}
-       alert('Signed in');
-	location.replace("index.html")
+             location.replace("index.html")
 }
 });
 
