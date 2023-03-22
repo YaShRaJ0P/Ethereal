@@ -101,7 +101,7 @@ function onSuccess(googleUser) {
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
 	import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,onAuthStateChanged,signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
-import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -148,6 +148,7 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
 		    // Signed in 
 			  
 		    const user = userCredential.user;
+			a=user;
                     var userId = document.getElementById("signup-username").value;
                     var email =  document.getElementById("signup-email").value;
                      writeUserData(email,userId,user.uid);
@@ -196,7 +197,7 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
 		    const user = userCredential.user;
 		    console.log(user);
 		    alert(user.email+" Login successfully!!!");
-                   
+                   read(user);
   const dt = new Date();
   update(ref(db, "Profile/" + user.uid), {
    LastLogin: dt,
@@ -233,16 +234,20 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
 
           
 });
+function read(user)
+{
 const dbRef = ref(getDatabase());
 get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
   if (snapshot.exists()) {
-    console.log(snapshot.val().Username);
+	 var user_displayname=snapshot.val().Username;
+    console.log(user_displayname);
   } else {
     console.log("No data available");
   }
 }).catch((error) => {
   console.error(error);
 });
+}
 
 	  /*----- Logout code start	  
 	  document.getElementById("logout").addEventListener("click", function() {
