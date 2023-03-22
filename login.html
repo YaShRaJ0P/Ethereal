@@ -198,7 +198,7 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
 		    alert(user.email+" Login successfully!!!");
                     const db = getDatabase();
   const dt = new Date();
-  update(ref(db, "Profile/" + ui), {
+  update(ref(db, "Profile/" + user.uid), {
    LastLogin: dt,
   });
 		   // document.getElementById('logout').style.display = 'block';
