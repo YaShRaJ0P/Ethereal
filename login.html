@@ -5,8 +5,8 @@
   <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
   <title>Login and Registration Form Example</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'><link rel="stylesheet" href="./loginstyle.css">
-
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="./loginstyle.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -155,7 +155,7 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
                      writeUserData(email,userId,user.uid);
 		    console.log(user);
 		    alert("Registration successfully!!");
-			
+			var success = true;
 		    // ...
 		  })
 		  .catch((error) => {
