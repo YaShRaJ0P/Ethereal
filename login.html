@@ -228,13 +228,17 @@ int i=0;
   		
 	  });
 	  //----- End
-         onAuthStateChanged(auth,(user)=>{if(i==1)
-{
+         onAuthStateChanged(auth,(user)=>{
+
           if(user)
-          {const uid=user.uid;
-alert('Signed in');
-	   location.replace("index.html")
-}}
+          {
+var userId = document.getElementById("signup-username").value;
+var email =  document.getElementById("signup-email").value;
+           if(email==user.email)       
+      {writeUserData(email,userId,user.uid);}
+       alert('Signed in');
+	location.replace("index.html")
+}
 });
 
 	  /*----- Logout code start	  
