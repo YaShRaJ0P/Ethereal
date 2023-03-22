@@ -153,10 +153,7 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
                      writeUserData(email,userId,user.uid);
 		    console.log(user);
 		    alert("Registration successfully!!");
-<<<<<<< HEAD
 		
-=======
->>>>>>> 420d8a92de84a7ed72932146652723e7beacd994
 		    // ...
 		  })
 		  .catch((error) => {
@@ -228,13 +225,11 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
   		
 	  });
          onAuthStateChanged(auth,(user)=>{
-<<<<<<< HEAD
         
           if(user)
           {
              console.log(user.email)
 }
-=======
 
           
 });
@@ -247,7 +242,6 @@ get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
   }
 }).catch((error) => {
   console.error(error);
->>>>>>> 420d8a92de84a7ed72932146652723e7beacd994
 });
 
 	  /*----- Logout code start	  
