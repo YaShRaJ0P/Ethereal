@@ -134,7 +134,6 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
   });
 }
 
-
 	//----- New Registration code start	  
 	  document.getElementById("signup-button").addEventListener("click", function() {
 		  event.preventDefault()
@@ -226,12 +225,11 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
                     });		
   		
 	  });
-	  //----- End
          onAuthStateChanged(auth,(user)=>{
+
           if(user)
-          {const uid=user.uid;
-alert('Signed in');
-	   location.replace("index.html")
+          {
+             location.replace("index.html")
 }
 });
 
