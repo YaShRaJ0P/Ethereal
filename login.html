@@ -123,10 +123,11 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const auth = getAuth();
+  const db = getDatabase();
   //console.log(app);
   function writeUserData(em,us,ui) {
-  const db = getDatabase();
-	  const dt=new Date();
+  
+ const dt = new Date();
   set(ref(db, "Profile/" + ui), {
     Email: em,
 	Username: us,
@@ -154,7 +155,6 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
                      writeUserData(email,userId,user.uid);
 		    console.log(user);
 		    alert("Registration successfully!!");
-			var success = true;
 		    // ...
 		  })
 		  .catch((error) => {
@@ -197,7 +197,7 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
 		    const user = userCredential.user;
 		    console.log(user);
 		    alert(user.email+" Login successfully!!!");
-                    const db = getDatabase();
+                   
   const dt = new Date();
   update(ref(db, "Profile/" + user.uid), {
    LastLogin: dt,
@@ -227,10 +227,17 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
 	  });
          onAuthStateChanged(auth,(user)=>{
 
-          if(user)
-          {
-             location.replace("index.html")
-}
+          
+});
+const dbRef = ref(getDatabase());
+get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
+  if (snapshot.exists()) {
+    console.log(snapshot.val().Username);
+  } else {
+    console.log("No data available");
+  }
+}).catch((error) => {
+  console.error(error);
 });
 
 	  /*----- Logout code start	  
