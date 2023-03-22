@@ -126,9 +126,11 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
   //console.log(app);
   function writeUserData(em,us,ui) {
   const db = getDatabase();
+	  const dt=new Date();
   set(ref(db, "Profile/" + ui), {
     Email: em,
 	Username: us,
+	LastLogin: dt,
   });
 }
 
@@ -198,7 +200,7 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
 		    alert(user.email+" Login successfully!!!");
                     const db = getDatabase();
   const dt = new Date();
-  update(ref(db, "Profile/" + ui), {
+  update(ref(db, "Profile/" + user.uid), {
    LastLogin: dt,
   });
 		   // document.getElementById('logout').style.display = 'block';
@@ -228,7 +230,8 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
          onAuthStateChanged(auth,(user)=>{
           if(user)
           {const uid=user.uid;
-location.replace("index.html");
+alert('Signed in');
+	   location.replace("index.html")
 }
 });
 
