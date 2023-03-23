@@ -134,10 +134,9 @@
                       </p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <a href="wastemanagement.html" class="view" target="_blank">
-                         <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">
                             View
-                          </button> </a>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -155,10 +154,9 @@
                       </p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <a href="powergadgets.html" class="view" target="_blank">
                           <button type="button" class="btn btn-sm btn-outline-secondary">
                             View
-                          </button> </a>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -264,13 +262,10 @@
                         little bit longer.
                       </p>
                       <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">              
-                                      <a href="natureconservation.html" class="view" target="_blank">
-
+                        <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary">
                             View
                           </button>
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -542,10 +537,9 @@ get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
 document.getElementById("username").innerHTML=user_displayname;
 document.getElementById("username-link").style.pointerEvents ="none";
 document.getElementById("username-link").style.cursor="default";
-document.getElementById("logout-hover").addEventListener("mouseover",mouseOver());
-document.getElementById("arrow_box").addEventListener("mouseout",mouseOut());
+document.getElementById("logout-hover").onmouseover =function() {mouseOver()};
+document.getElementById("logout-hover").onmouseout =function() {mouseOut()};
 function mouseOver(){
-  console.log("I am yash");
   document.getElementById("arrow_box").style.display="block";
 }
 function mouseOut(){
