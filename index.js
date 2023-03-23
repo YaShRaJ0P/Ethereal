@@ -16,7 +16,7 @@ const settings = {
     }
   };
   
-  const swiper = new Swiper(".mySwiper", settings);
+  const swiper = new swiper(".mySwiper", settings);
 //Search js
 function technologyopen(){
   //Location js

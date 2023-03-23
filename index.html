@@ -22,10 +22,10 @@
           <li class="nav-li"><a href="#overview-technology" class="style-none">Overview</a></li>
           <li class="nav-li"><a href="#technology-slider" class="style-none">Products</a></li>
           <li class="nav-li"><a href="#nearby-store" class="style-none">Map</a></li>
-          <li class="nav-li padding-bottom" id="logout-hover"><a href="login.html" id="username-link"><img src="images/profile-icon.png" alt="" class="profile-logo"/><div id="username">Sign Up/Sign In</div><div id="arrow_box">Log Out</div></li></a>
+          <li class="nav-li padding-bottom" id="logout-hover"><a href="login.html" id="username-link" target="_blank"><img src="images/profile-icon.png" alt="" class="profile-logo"/><div id="username">Sign Up/Sign In</div>
+            <button id="arrow_box" onclick="logout1()">Log Out</button></li></a>
         </ul>
       </nav>
-    
       <button id="forum-open-icon" title="Discussion Forum">
     <img src="images/message.png" width="35px" height="35px" alt="Forum" />
   </button>
@@ -517,7 +517,7 @@ import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/
   const auth = getAuth();
   onAuthStateChanged(auth,(user)=>{
         
-        if(user){
+    if(user){
         read(user);
         console.log(user.email);}
 
@@ -525,6 +525,7 @@ import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/
      //   location.replace("login.html");
    // }
 })
+
 var user_displayname;
 function read(user)
 {
@@ -554,5 +555,18 @@ function mouseOut(){
 }
 
 
+
+//---- Logout code start	  
+function logout1() {
+  console.log("first try");
+  signOut(auth).then(() => {
+      // Sign-out successful.
+      console.log('Sign-out successful.');
+      alert('Sign-out successful.');
+    }).catch((error) => {
+      // An error happened.
+      console.log('An error happened.');
+    });				  
+  }
 </script>
 </html>
