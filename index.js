@@ -44,3 +44,6 @@ else{
 }
 
 }
+//import of variables
+const {user_displayname} = require('./module1.js');
+console.log(user_displayname);

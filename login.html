@@ -197,11 +197,11 @@ import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/
 		    const user = userCredential.user;
 		    console.log(user);
 		    alert(user.email+" Login successfully!!!");
-                   read(user);
   const dt = new Date();
   update(ref(db, "Profile/" + user.uid), {
    LastLogin: dt,
   });
+  location.replace("index.html");
 		   // document.getElementById('logout').style.display = 'block';
 		    // ...
 		  })
@@ -234,20 +234,7 @@ import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/
 
           
 });
-function read(user)
-{
-const dbRef = ref(getDatabase());
-get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
-  if (snapshot.exists()) {
-	 var user_displayname=snapshot.val().Username;
-    console.log(user_displayname);
-  } else {
-    console.log("No data available");
-  }
-}).catch((error) => {
-  console.error(error);
-});
-}
+
 
 	  /*----- Logout code start	  
 	  document.getElementById("logout").addEventListener("click", function() {

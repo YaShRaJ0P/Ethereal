@@ -493,7 +493,7 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,onAuthStateChanged,signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
-import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -515,16 +515,34 @@ import { getDatabase, ref, set,update } from "https://www.gstatic.com/firebasejs
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const auth = getAuth();
-  firebase.auth().onAuthStateChanged((user)=>{
-    if(user){
-        logout();
-        location.replace("login.html")
-    }
+  onAuthStateChanged(auth,(user)=>{
+        
+        if(user){
+        read(user);
+        console.log(user.email);}
+
+   // if(user){
+     //   location.replace("login.html");
+   // }
 })
-
-
-function logout(){
-    firebase.auth().signOut()
+function read(user)
+{
+const dbRef = ref(getDatabase());
+get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
+  
+  if (snapshot.exists()) {
+	 var user_displayname=snapshot.val().Username;
+    console.log(user_displayname);
+  } else {
+    console.log("No data available");
+  }
+}).catch((error) => {
+  console.error(error);
+});
 }
+
+
+
+
 </script>
 </html>
