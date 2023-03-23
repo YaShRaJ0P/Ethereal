@@ -525,13 +525,14 @@ import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/
      //   location.replace("login.html");
    // }
 })
+var user_displayname;
 function read(user)
 {
 const dbRef = ref(getDatabase());
 get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
   
   if (snapshot.exists()) {
-	 var user_displayname=snapshot.val().Username;
+	user_displayname=snapshot.val().Username;
     console.log(user_displayname);
   } else {
     console.log("No data available");
@@ -541,7 +542,7 @@ get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
 });
 }
 
-
+console.log(user_displayname)
 
 
 </script>
