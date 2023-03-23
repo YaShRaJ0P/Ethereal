@@ -534,6 +534,7 @@ get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
   if (snapshot.exists()) {
 	user_displayname=snapshot.val().Username;
     console.log(user_displayname);
+document.getElementById("usename").innerHTML=user_displayname;
   } else {
     console.log("No data available");
   }
@@ -541,8 +542,6 @@ get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
   console.error(error);
 });
 }
-
-console.log(user_displayname)
 
 
 </script>
