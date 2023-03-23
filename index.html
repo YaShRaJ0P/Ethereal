@@ -22,7 +22,7 @@
           <li class="nav-li"><a href="#overview-technology" class="style-none">Overview</a></li>
           <li class="nav-li"><a href="#technology-slider" class="style-none">Products</a></li>
           <li class="nav-li"><a href="#nearby-store" class="style-none">Map</a></li>
-          <li class="nav-li padding-bottom" ><a href="login.html"><img src="images/profile-icon.png" alt="" class="profile-logo"/><div id="username">Sign Up/Sign In</div></li></a>
+          <li class="nav-li padding-bottom" ><a href="login.html" id="username-link"><img src="images/profile-icon.png" alt="" class="profile-logo"/><div id="username">Sign Up/Sign In</div></li></a>
         </ul>
       </nav>
     
@@ -534,7 +534,9 @@ get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
   if (snapshot.exists()) {
 	user_displayname=snapshot.val().Username;
     console.log(user_displayname);
-document.getElementById("usename").innerHTML=user_displayname;
+document.getElementById("username").innerHTML=user_displayname;
+document.getElementById("username-link").style.pointerEvents ="none";
+document.getElementById("username-link").style.cursor="default";
   } else {
     console.log("No data available");
   }
