@@ -22,8 +22,9 @@
           <li class="nav-li"><a href="#overview-technology" class="style-none">Overview</a></li>
           <li class="nav-li"><a href="#technology-slider" class="style-none">Products</a></li>
           <li class="nav-li"><a href="#nearby-store" class="style-none">Map</a></li>
-          <li class="nav-li padding-bottom" id="logout-hover"><a href="login.html" id="username-link" target="_blank"><img src="images/profile-icon.png" alt="" class="profile-logo"/><div id="username">Sign Up/Sign In</div>
-            <button id="arrow_box" onclick="logout1()">Log Out</button></li></a>
+          <li class="nav-li padding-bottom" id="logout-hover"><a href="login.html" id="usernamelink"><img src="images/profile-icon.png" alt="" class="profile-logo"/><div id="username">Sign Up/Sign In</div>
+            <button id="logout-button" onclick="logout()">Log Out</button>
+          </li></a>
         </ul>
       </nav>
       <button id="forum-open-icon" title="Discussion Forum">
@@ -124,7 +125,7 @@
     
                 <div class="col-md-4">
                   <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" src="/image/solar.jpg" alt="Card image cap" />
+                    <img class="card-img-top" src="/images/solar.jpg" alt="Card image cap" />
                     <div class="card-body">
                       <h5 class="card-heading">Waste Management</h5>
                       <p class="card-text">
@@ -277,7 +278,6 @@
         </main>
       </section>
 
-
       <section id="technology-slider">
         <h1 class="technology-slider-title">Products</h1>
         <div id="click2flip">
@@ -379,7 +379,6 @@
         </div>
       </div>
       </section>
-
       <section id="nearby-store">
         <div class="nearby-store-div">
           <h3 class="technology-slider-title">Find Stores Of Sustainable Technologies Nearby :</h3>
@@ -487,8 +486,8 @@
  </footer>
 
 </body>
-<script type="module">
-  document.getElementById("arrow_box").style.display="none";
+<script type="module" defer="true">
+  document.getElementById("logout-button").style.display="none";
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
@@ -519,8 +518,8 @@ import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/
         
     if(user){
         read(user);
-        console.log(user.email);}
-
+        console.log(user.email);
+      }
    // if(user){
      //   location.replace("login.html");
    // }
@@ -536,15 +535,14 @@ get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
 	user_displayname=snapshot.val().Username;
     console.log(user_displayname);
 document.getElementById("username").innerHTML=user_displayname;
-document.getElementById("username-link").style.pointerEvents ="none";
-document.getElementById("username-link").style.cursor="default";
+usernamelink.href='';
 document.getElementById("logout-hover").onmouseover =function() {mouseOver()};
 document.getElementById("logout-hover").onmouseout =function() {mouseOut()};
 function mouseOver(){
-  document.getElementById("arrow_box").style.display="block";
+  document.getElementById("logout-button").style.display="block";
 }
 function mouseOut(){
-  document.getElementById("arrow_box").style.display="none";
+  document.getElementById("logout-button").style.display="none";
 }
   } else {
     console.log("No data available");
@@ -555,18 +553,18 @@ function mouseOut(){
 }
 
 
-
 //---- Logout code start	  
-function logout1() {
-  console.log("first try");
-  signOut(auth).then(() => {
-      // Sign-out successful.
-      console.log('Sign-out successful.');
-      alert('Sign-out successful.');
-    }).catch((error) => {
-      // An error happened.
-      console.log('An error happened.');
-    });				  
-  }
+document.getElementById("logout-button").addEventListener("click", function() {
+  console.log("2nd try");
+		  signOut(auth).then(() => {
+			  // Sign-out successful.
+			  console.log('Sign-out successful.');
+			  alert('Sign-out successful.');
+  location.replace("index.html");
+			}).catch((error) => {
+			  // An error happened.
+			  console.log('An error happened.');
+			});		  		  
+	  });
 </script>
 </html>

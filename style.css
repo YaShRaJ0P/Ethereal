@@ -111,16 +111,15 @@
       }
     }
 
-    #arrow_box {
+    #logout-button {
       position: relative;
       background: #182126;
       color: white;
       font-family: serif;
       text-align: center;
     text-decoration: none !important;
-    opacity: 0.9;
     }
-    #arrow_box:after {
+    #logout-button:after {
       text-decoration: none !important;
       bottom: 100%;
       left: 50%;
@@ -133,7 +132,6 @@
       border-bottom-color: #182126;
       border-width: 10px;
       margin-left: -10px;
-      opacity: 0.9;
     }
 
   /*Latest Technology*/
