@@ -23,8 +23,8 @@
           <li class="nav-li"><a href="#technology-slider" class="style-none">Products</a></li>
           <li class="nav-li"><a href="#nearby-store" class="style-none">Map</a></li>
           <li class="nav-li padding-bottom" id="logout-hover"><a href="login.html" id="usernamelink"><img src="images/profile-icon.png" alt="" class="profile-logo"/><div id="username">Sign Up/Sign In</div>
-            <button id="logout-button" onclick="logout()">Log Out</button>
-          </li></a>
+           
+          </li></a> <button id="logout-button">Log Out</button>
         </ul>
       </nav>
       <button id="forum-open-icon" title="Discussion Forum">
@@ -487,7 +487,6 @@
 
 </body>
 <script type="module" defer="true">
-  document.getElementById("logout-button").style.display="none";
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
@@ -535,15 +534,11 @@ get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
 	user_displayname=snapshot.val().Username;
     console.log(user_displayname);
 document.getElementById("username").innerHTML=user_displayname;
+document.getElementById("usernamelink").style.pointerEvents ="none";
+document.getElementById("usernamelink").style.cursor="default";
+
+
 usernamelink.href='';
-document.getElementById("logout-hover").onmouseover =function() {mouseOver()};
-document.getElementById("logout-hover").onmouseout =function() {mouseOut()};
-function mouseOver(){
-  document.getElementById("logout-button").style.display="block";
-}
-function mouseOut(){
-  document.getElementById("logout-button").style.display="none";
-}
   } else {
     console.log("No data available");
   }
@@ -555,7 +550,6 @@ function mouseOut(){
 
 //---- Logout code start	  
 document.getElementById("logout-button").addEventListener("click", function() {
-  console.log("2nd try");
 		  signOut(auth).then(() => {
 			  // Sign-out successful.
 			  console.log('Sign-out successful.');

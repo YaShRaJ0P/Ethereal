@@ -110,28 +110,24 @@
         height: 16px;
       }
     }
-
     #logout-button {
       position: relative;
       background: #182126;
       color: white;
-      font-family: serif;
-      text-align: center;
-    text-decoration: none !important;
     }
     #logout-button:after {
-      text-decoration: none !important;
-      bottom: 100%;
-      left: 50%;
+      right: 100%;
+      top: 50%;
       border: solid transparent;
       content: "";
       height: 0;
       width: 0;
       position: absolute;
+      pointer-events: none;
       border-color: rgba(24, 33, 38, 0);
-      border-bottom-color: #182126;
-      border-width: 10px;
-      margin-left: -10px;
+      border-right-color: #182126;
+      border-width: 20px;
+      margin-top: -20px;
     }
 
   /*Latest Technology*/
