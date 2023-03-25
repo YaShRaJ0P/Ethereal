@@ -214,6 +214,11 @@
     transform: scale(1.1); 
   }
 
+  /*View Card*/
+  .card-img-top{
+    height: 190px;
+  }
+
 /*Technology Slider*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
@@ -627,7 +632,7 @@ ul{
 }
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 1000px){
   .footer-col{
     width: 50% !important;
     margin-bottom: 30px !important;
