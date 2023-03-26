@@ -416,7 +416,7 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,onAuthStateChanged,signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
-import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+//import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -441,7 +441,7 @@ import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/
   onAuthStateChanged(auth,(user)=>{
         
     if(user){
-	 import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+	 
         read(user);
         console.log(user.email);
       }
@@ -453,6 +453,7 @@ import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/
 var user_displayname;
 function read(user)
 {
+import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
 const dbRef = ref(getDatabase());
 get(child(dbRef,"Profile/"+user.uid)).then((snapshot) => {
   
