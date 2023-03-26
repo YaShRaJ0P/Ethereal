@@ -143,7 +143,8 @@ var b;
 		  
 		  var email =  document.getElementById("signup-email").value;
 		  var password = document.getElementById("signup-password").value;
-                  
+                  a=email;
+                  b=password;
 		  //For new registration
 		  createUserWithEmailAndPassword(auth, email, password)
 		  .then((userCredential) => {
@@ -191,8 +192,7 @@ var b;
 		   event.preventDefault()
 		  var email =  document.getElementById("signin-email").value;
 		  var password = document.getElementById("signin-password").value;
-                   a=email;
-                   b=password;
+                   
 		  signInWithEmailAndPassword(auth, email, password)
 		  .then((userCredential) => {
 		    // Signed in 
