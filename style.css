@@ -40,7 +40,6 @@
     position: relative;
   }
   .logo{
-    width: 53px;
     height: 53px;
     padding-left: 6px;
   }
@@ -317,7 +316,7 @@
 .image-div .technology-image {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 .card-div .nametitle {
   margin-top: 25px;
@@ -418,6 +417,17 @@ html {
 
 .buy > svg > path {
   transition: var(--motion-duration) var(--motion-ease);
+}
+.buy-text{
+  color: white !important;
+}
+
+.buy-text:visited{
+  color: white !important;
+}
+
+.buy-text:active{
+  color: white !important;
 }
 
 .buy:hover > svg > path {
