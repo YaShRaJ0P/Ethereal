@@ -203,7 +203,7 @@ var b;
   update(ref(db, "Profile/" + user.uid), {
    LastLogin: dt,
   });
-  location.replace("index.html");
+ // location.replace("index.html");
 		   // document.getElementById('logout').style.display = 'block';
 		    // ...
 		  })
@@ -232,7 +232,8 @@ var b;
           if(user)
           {
              writeUserData(a,b,user.uid);
-             console.log(user.email)
+             console.log(user.email);
+            location.replace("index.html");
 }
 
           
