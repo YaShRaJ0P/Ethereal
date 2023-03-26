@@ -150,7 +150,13 @@ var k=1;
 		    const user = userCredential.user;
                     var userId = document.getElementById("signup-username").value;
                     var email =  document.getElementById("signup-email").value;
-                     writeUserData(email,userId,user.uid);
+                     writeUserData(email,userId,user.uid)
+.then(() => {
+  alert("Data Saved");
+})
+.catch((error) => {
+  // The write failed...
+});
 		    console.log(user);
 		    alert("Registration successfully!!");
 		     
