@@ -441,6 +441,7 @@ import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/
   onAuthStateChanged(auth,(user)=>{
         
     if(user){
+	 import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
         read(user);
         console.log(user.email);
       }
