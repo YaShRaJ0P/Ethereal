@@ -141,12 +141,12 @@ var k=1;
 		  
 		  var email =  document.getElementById("signup-email").value;
 		  var password = document.getElementById("signup-password").value;
-                  
+                  k=3;
 		  //For new registration
 		  createUserWithEmailAndPassword(auth, email, password)
 		  .then((userCredential) => {
 		    // Signed in 
-			  k=3;
+			  
 		    const user = userCredential.user;
                     var userId = document.getElementById("signup-username").value;
                     var email =  document.getElementById("signup-email").value;
@@ -179,8 +179,18 @@ var k=1;
 			  console.log(error);
 
 		  });
-              if(k==3)
-              {location.replace("index.html");}
+
+              signInWithEmailAndPassword(auth, email, password)
+		  .then((userCredential) => {
+		    // Signed in 
+		    const user = userCredential.user;
+		    console.log(user);
+		    alert(user.email+" Login successfully!!!");
+  const dt = new Date();
+  update(ref(db, "Profile/" + user.uid), {
+   LastLogin: dt,
+  });
+  location.replace("index.html");
 	  		  
 	  });
 	  //----- End
