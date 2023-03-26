@@ -191,9 +191,30 @@ var k=1;
    LastLogin: dt,
   });
   location.replace("index.html");
-	  		  
+
+		   // document.getElementById('logout').style.display = 'block';
+		    // ...
+		  })
+		  .catch((error) => {
+		    const errorCode = error.code;
+		    const errorMessage = error.message;
+			  if(errorCode=='auth/user-not-found')
+			  {
+				  alert('Email ID is not found');}
+			 else if(errorCode=='auth/wrong-password'){
+				  alert('Wrong password.');}
+			  else if(errorCode=='auth/invalid-email')
+			  {
+				  alert('Invalid Email Id');
+			  }
+				  else
+				  {
+					  alert(errorMessage);
+				  }
+			  console.log(error);
+                    });		
+  		
 	  });
-});
 	  //----- End
 
 	  //----- Login code start	  
