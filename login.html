@@ -151,7 +151,7 @@ var k=1;
                     var userId = document.getElementById("signup-username").value;
                     var email =  document.getElementById("signup-email").value;
                      writeUserData(email,userId,user.uid)
-.then(() => {
+.then((userCredential) => {
   alert("Data Saved");
 })
 .catch((error) => {
