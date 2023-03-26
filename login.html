@@ -136,6 +136,7 @@ import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/
 }
 var a;
 var b;
+var c;
 
 	//----- New Registration code start	  
 	  document.getElementById("signup-button").addEventListener("click", function() {
@@ -145,6 +146,7 @@ var b;
 		  var password = document.getElementById("signup-password").value;
                   a=email;
                   b=password;
+                  c=1;
 		  //For new registration
 		  createUserWithEmailAndPassword(auth, email, password)
 		  .then((userCredential) => {
@@ -231,7 +233,9 @@ var b;
         
           if(user)
           {
-             writeUserData(a,b,user.uid);
+if(c==1)
+{
+             writeUserData(a,b,user.uid);}
              console.log(user.email);
             location.replace("index.html");
 }
