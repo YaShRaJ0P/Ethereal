@@ -225,8 +225,9 @@ var k=1;
 	  });
          onAuthStateChanged(auth,(user)=>{
         
-         
-             console.log(user.email)
+         if(user)
+		 {
+             console.log(user.email);}
 })
 
           
