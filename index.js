@@ -27,7 +27,14 @@ function technologyopen(){
   if(locationtext =="<--Select-->"){
     alert("Enter The Location.");
   }
-}
+    const btn = document.querySelector('#search-id');  
+    const sb = document.querySelector('#location-input');  
+  
+    if(sb.value=="Delhi")  {
+    window.location.href = "delhi-map.html";
+    }
+    };
+  
 
 //Click2flip
 function isMobileTablet(){
@@ -47,4 +54,3 @@ else{
 //import of variables
 const {user_displayname} = require('./module1.js');
 console.log(user_displayname);
-
