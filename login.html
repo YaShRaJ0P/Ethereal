@@ -153,15 +153,7 @@ var k=1;
                      
 		    console.log(user);
 		    alert("Registration successfully!!");
-                     writeUserData(email,userId,user.uid)
-.then((userCredential) => {
-  alert("Data Saved");
-})
-.catch((error) => {
-  // The write failed...
-});
-		     
-		    // ...
+                     writeUserData(email,userId,user.uid);
 		  })
 		  .catch((error) => {
 		    const errorCode = error.code;
@@ -233,18 +225,13 @@ var k=1;
 	  });
          onAuthStateChanged(auth,(user)=>{
         
-          if(user)
-          {
-           if(k!=2)
-            {
-             if(k!=3){
-           location.replace("index.html");}
-}
-             console.log(user.email)
-}
+         if(user)
+		 {
+             console.log(user.email);}
+})
 
           
-});
+
 
 
 	  /*----- Logout code start	  
