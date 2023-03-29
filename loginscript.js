@@ -57,6 +57,18 @@ jQuery(document).ready(function($){
     $password_field.putCursorAtEnd();
   });
 
+  //show forgot-password form 
+  $forgot_password_link.on('click', function(event){
+    event.preventDefault();
+    forgot_password_selected();
+  });
+
+  //back to login from the forgot-password form
+  $back_to_login_link.on('click', function(event){
+    event.preventDefault();
+    login_selected();
+  });
+
   function login_selected(){
     $form_login.addClass('is-selected');
     $form_signup.removeClass('is-selected');
@@ -72,6 +84,14 @@ jQuery(document).ready(function($){
     $tab_login.removeClass('selected');
     $tab_signup.addClass('selected');
   }
+
+  function forgot_password_selected(){
+    $form_login.removeClass('is-selected');
+    $form_signup.removeClass('is-selected');
+    $form_forgot_password.addClass('is-selected');
+  }
+
+
 
   //IE9 placeholder fallback
   //credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
@@ -119,18 +139,54 @@ jQuery.fn.putCursorAtEnd = function() {
 
 login.style.display='block';
 signup.style.display='none';
+resetpassword.style.display = 'none';
 document.getElementById("white").style.backgroundColor="#FFF";
 function resetpasswordfn(){
   login.style.display='none';
   signup.style.display='none';
+  resetpassword.style.display = 'block';
+  forgot.style.display= 'none';
 }
 function loginfn(){
   login.style.display='block';
   signup.style.display='none';
+  resetpassword.style.display = 'none';
   document.getElementById("white").style.backgroundColor="#FFF";
+  forgot.style.display= 'block';
 }
 function signupfn(){
   login.style.display='none';
   signup.style.display='block';
+  resetpassword.style.display = 'none';
   document.getElementById("white").style.backgroundColor="#d2d8d8";
+  forgot.style.display= 'block';
 }
+function backfn(){
+  login.style.display='block';
+  signup.style.display='none';
+  resetpassword.style.display = 'none';
+  document.getElementById("white").style.backgroundColor="#FFF";
+  forgot.style.display= 'block';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
