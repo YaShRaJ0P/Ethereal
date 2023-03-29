@@ -242,31 +242,21 @@ var k=1;
                     });		
   		
 	  });
-         onAuthStateChanged(auth,(user)=>{
-        
-         if(user)
-		 {
-             console.log(user.email);}
-})
+      document.getElementById("reset-button").addEventListener("click", function() {
+		   event.preventDefault()
+         var fe=document.getElementById("signin-email").value;
+         sendPasswordResetEmail(auth,fe)
+  .then(() => {
+    alert("Password had been reset and send on email ");
+    // ..
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+  });
 
-          
-
-
-
-	  /*----- Logout code start	  
-	  document.getElementById("logout").addEventListener("click", function() {
-		  signOut(auth).then(() => {
-			  // Sign-out successful.
-			  console.log('Sign-out successful.');
-			  alert('Sign-out successful.');
-			  document.getElementById('logout').style.display = 'none';
-			}).catch((error) => {
-			  // An error happened.
-			  console.log('An error happened.');
-			});		  		  
-	  });
-	  */ //----- End
-
+           }); 
 
 </script>
 </html>
