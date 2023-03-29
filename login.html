@@ -244,7 +244,7 @@ var k=1;
 	  });
       document.getElementById("reset-button").addEventListener("click", function() {
 		   event.preventDefault()
-         var fe=document.getElementById("signin-email").value;
+         var fe=document.getElementById("reset-email").value;
          sendPasswordResetEmail(auth,fe)
   .then(() => {
     alert("Password had been reset and send on email ");
