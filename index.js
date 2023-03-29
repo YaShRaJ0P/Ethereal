@@ -39,6 +39,9 @@ function technologyopen(){
     if(sb.value=="Hyderabad")  {
     window.location.href = "hyderabad-map.html";
     }
+    if(sb.value=="Kolkata")  {
+      window.location.href = "kolkata-map.html";
+      }
     };
   
 
