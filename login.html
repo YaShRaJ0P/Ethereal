@@ -119,7 +119,7 @@ function onSuccess(googleUser) {
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
-	import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,onAuthStateChanged,signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+	import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,sendPasswordResetEmail} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
 import { getDatabase,get,child, ref, set,update } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -242,31 +242,33 @@ var k=1;
                     });		
   		
 	  });
-         onAuthStateChanged(auth,(user)=>{
-        
-         if(user)
-		 {
-             console.log(user.email);}
-})
+      document.getElementById("reset-button").addEventListener("click", function() {
+		   event.preventDefault()
+         var fe=document.getElementById("reset-email").value;
+         sendPasswordResetEmail(auth,fe)
+  .then(() => {
+    alert('Password had been reset and send to email ');
+    // ..
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    if(errorCode=='auth/missing email')
+{
+alert('No email is written');
+}
+else if(errorCode=='auth/invalid-email')
+{alert('Invalid Email'};
+else if(errorCode=='auth/user-not-found')
+{alert('Email Id is not found'};
+else
+  {
+    alert(errorMessage);
+   }
+			  
+  });
 
-          
-
-
-
-	  /*----- Logout code start	  
-	  document.getElementById("logout").addEventListener("click", function() {
-		  signOut(auth).then(() => {
-			  // Sign-out successful.
-			  console.log('Sign-out successful.');
-			  alert('Sign-out successful.');
-			  document.getElementById('logout').style.display = 'none';
-			}).catch((error) => {
-			  // An error happened.
-			  console.log('An error happened.');
-			});		  		  
-	  });
-	  */ //----- End
-
+           }); 
 
 </script>
 </html>
