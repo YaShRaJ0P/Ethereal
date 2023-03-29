@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Labrada:wght@700&family=Lora:wght@700&family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rufina:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -487,6 +488,8 @@ html {
 }
 .image-title{
   margin-top: 2px;
+  font-family: 'Noticia Text', serif;
+  font-weight: 900;
 }
 
 @media (max-width: 850px) {

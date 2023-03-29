@@ -442,3 +442,12 @@ body {
 .image-label{
   color: #505260;
 }
+#check{
+  width: 17px;
+  height: 17px;
+}
+.check-label{
+  font-size: 16px !important;
+  
+  color: #918380;
+}
