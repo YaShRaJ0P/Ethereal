@@ -94,7 +94,7 @@
      font-weight: 600;
      font-size: 28px;color: var(--logo-span-color);
   }
-   @media (max-width: 1000px) {
+   @media (max-width: 1200px) {
       .navbar {
         flex-direction: column;
       }
@@ -113,7 +113,7 @@
   @media (max-width: 476px) {
       
       .nav-li {
-        margin: 0 1rem;
+        margin: 0 0.7rem;
         font-size: 10px;
       }
       .nav-links{
@@ -126,10 +126,16 @@
         width: 16px;
         height: 16px;
       }
+      #logout-button:after{
+        top: 118% !important;
+      border-width: 10px !important;
+      }
     }
     #logout-button {
       position: relative;
       background: #182126;
+      padding: 0 !important;
+      margin: 0 !important;
       color: white;
     }
     #logout-button:after {
@@ -170,8 +176,8 @@
 }
 #username{
   display: inline-block;
-  font-size: 14px;
   color: white;
+  margin: 0 2px !important;
 }
 
 
@@ -262,6 +268,7 @@
 .technology-slider-title{
   padding: 22px 0;
   text-align: center;
+  text-shadow: 2px 2px 3px #ff9900;
   font-family: 'Cinzel', serif;
 }
 ::-webkit-scrollbar {
