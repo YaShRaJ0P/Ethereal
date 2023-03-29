@@ -33,6 +33,12 @@ function technologyopen(){
     if(sb.value=="Delhi")  {
     window.location.href = "delhi-map.html";
     }
+    if(sb.value=="Bengaluru")  {
+    window.location.href = "bengaluru-map.html";
+    }
+    if(sb.value=="Hyderabad")  {
+    window.location.href = "hyderabad-map.html";
+    }
     };
   
 
