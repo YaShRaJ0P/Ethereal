@@ -247,13 +247,25 @@ var k=1;
          var fe=document.getElementById("reset-email").value;
          sendPasswordResetEmail(auth,fe)
   .then(() => {
-    alert("Password had been reset and send on email ");
+    alert('Password had been reset and send to email ');
     // ..
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
+    if(errorCode=='auth/missing email')
+{
+alert('No email is written');
+}
+else if(errorCode=='auth/invalid-email')
+{alert('Invalid Email'};
+else if(errorCode=='auth/user-not-found')
+{alert('Email Id is not found'};
+else
+  {
     alert(errorMessage);
+   }
+			  
   });
 
            }); 
