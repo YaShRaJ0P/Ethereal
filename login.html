@@ -151,7 +151,12 @@ var k=1;
     Email: em,
 	Username: us,
 	LastLogin: dt,
-  });
+  }).then(() => {
+   alert('Data saved successfully!');
+})
+.catch((error) => {
+  // The write failed...
+});
 }
 
 	//----- New Registration code start	  
