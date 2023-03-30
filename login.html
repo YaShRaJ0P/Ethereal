@@ -149,8 +149,8 @@ var k=1;
  const dk = new Date();
   set(ref(db, "Profile/" + ui), {
     Email: em,
+      SignUpDate: dk,
 	Username: us,
-	SignUpDate: dk,
   }).then(() => {
    alert("Registration successfully!!");
    location.replace("index.html");
