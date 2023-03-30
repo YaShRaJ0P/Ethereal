@@ -42,6 +42,12 @@ function technologyopen(){
     if(sb.value=="Kolkata")  {
       window.location.href = "kolkata-map.html";
       }
+      if(sb.value=="Mumbai")  {
+        window.location.href = "mumbai-map.html";
+        }
+        if(sb.value=="Patna")  {
+          window.location.href = "patna-map.html";
+          }
     };
   
 
