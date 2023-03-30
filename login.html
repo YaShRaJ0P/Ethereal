@@ -153,9 +153,10 @@ var k=1;
 	LastLogin: dt,
   }).then(() => {
    alert('Data saved successfully!');
+   location.replace("index.html");
 })
 .catch((error) => {
-  alert('write failed');
+  alert('Data donot saved successfully');
 });
 }
 
