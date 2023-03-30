@@ -152,7 +152,7 @@ var k=1;
 	Username: us,
 	LastLogin: dt,
   }).then(() => {
-   alert('Data saved successfully!');
+   alert("Registration successfully!!");
    location.replace("index.html");
 })
 .catch((error) => {
@@ -177,7 +177,7 @@ var k=1;
                     var email =  document.getElementById("signup-email").value;
                      
 		    console.log(user);
-		    alert("Registration successfully!!");
+                    
                      writeUserData(email,userId,user.uid);
 		  })
 		  .catch((error) => {
