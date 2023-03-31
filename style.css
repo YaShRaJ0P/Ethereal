@@ -55,6 +55,10 @@
   color: inherit !important;
   text-decoration: inherit !important;
 }
+.d-none{
+  color: black !important;
+  font-weight: 700;
+}
   .navbar {
     position: fixed !important;
     top: 0 !important;
