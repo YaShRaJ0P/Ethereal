@@ -1,6 +1,6 @@
 # Ethereal
 Welcome,
-As we are aware Sustainability issues are the critical issues our planet is facing today. it is crucial to work towards sustainable solution to preserve our planet for future generation. Our Project name is  Ethereal which is a website( https://yashraj0p.github.io/Ethereal/index.html#html ).It is a wonderful resource for people who are passionate about living a sustainable life .Sustainable living means to live in a way that supports the environment, economy and society.
+As we are aware Sustainability issues are the critical issues our planet is facing today. it is crucial to work towards sustainable solution to preserve our planet for future generation. Our Project name is  Ethereal which is a website https://yashraj0p.github.io/Ethereal/index.html#html .It is a wonderful resource for people who are passionate about living a sustainable life .Sustainable living means to live in a way that supports the environment, economy and society.
 ETHEREAL is made using 
 1)HTML
 2) CSS
@@ -16,7 +16,7 @@ In this section we have provided detail about the latest technology which are av
 In this section we have provided details about the ways in which we can reduce waste in our homes and society.
 # Power saving gadgets 
 In this section we have provided details about the Power saving appliances available in the market with which we can replace our old appliance.
-#Water Conservation 
+# Water Conservation 
 In this section we have provided different ways by which we can conserve water in our homes and society.
 # Nature conservation
 In this section we have provided details about different ways by which we can conserve nature and lead  a sustainable life.
