@@ -13,6 +13,9 @@ ETHEREAL is made using
 # General awareness
 In this section we have provided general information on small changes that we can bring in our daily lifestyle which can help us live a sustainable life.
 ![Screenshot_20230404-220230_Chrome](https://user-images.githubusercontent.com/127089397/229858084-97506472-ba3c-4890-b69f-75611fd8121d.jpg)
+![Screenshot_20230404-220617_Chrome](https://user-images.githubusercontent.com/127089397/229858986-d86f6f9c-3056-45d9-8e94-d51225dadb79.jpg)
+![Screenshot_20230404-220636_Chrome](https://user-images.githubusercontent.com/127089397/229859049-0a839349-c850-44af-a199-3b552f12da1b.jpg)
+![Screenshot_20230404-220653_Chrome](https://user-images.githubusercontent.com/127089397/229859081-fc102cec-eca2-4b54-b19d-fab479c13229.jpg)
 # Latest Technology 
 In this section we have provided detail about the latest technology which are available in the world helping to preserve environment and lowering the pollution level in the world.
 #Waste Management 
