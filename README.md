@@ -24,7 +24,7 @@ In this section we have provided different ways by which we can conserve water i
 # Nature conservation
 In this section we have provided details about different ways by which we can conserve nature and lead  a sustainable life.
 # Sign up /Sign in 
-By clicking on sign in/sign up button user is directed to sign in and sign up page where user can sign up by providing their username , Email and Password . When they click on sign up there data is being saved in firebase and they are directed to homepage where there user name is being displayed and a logout option is also displayed on clicking by which they can sign out. Moreover now if anytime they want to sign in to their account again they just need to login by providing their email id and password. We have even put Forgot password option if user forget their password then they are 
+By clicking on sign in/sign up button user is directed to sign in and sign up page where user can sign up by providing their username , Email and Password . When they click on sign up there data is being saved in firebase and they are directed to homepage where there user name is being displayed and a logout option is also displayed .On clicking on logout button they can sign out. Moreover now if anytime they want to sign in to their account again they just need to login by providing their email id and password. We have even put Forgot password option if user forget their password then they are 
 # Products
 In this section we have provided detail about different sustainable products which user can buy by clicking on buy button .They will be directed to e-commerce website from where they can purchase the selected product.
 ![Screenshot gdsc 8](https://user-images.githubusercontent.com/127089397/229853388-9d2577fd-14a6-4108-bea0-64a538c87f40.png)
@@ -33,7 +33,8 @@ In this section we have provided details about the local shops which sell sustai
 ![Screenshot gdsc 9](https://user-images.githubusercontent.com/127089397/229853443-973f4d6f-6cc9-4366-9548-33d1532d1bf7.png)
 # Challenges faced
 1)When we were making login and sign up page then one of the major challenges was to store user data in real-time and show it when they login. We used Firebase for storing the user data. Firebase authentication and Firebase real-time database feature is used for the backend development of the sign up and login page.
-
+2)The other challenge was to make website with proper responsiveness for desktop and mobile.
+3)
 
 
 
