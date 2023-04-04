@@ -35,6 +35,8 @@ In this section we have provided detail about different sustainable products whi
 # Shops Nearby section
 In this section we have provided details about the local shops which sell sustainable products .Their location is provided on google maps. When user select their city then all the local seller who sell sustainable product in their city their location is shown on the maps. 
 ![Screenshot gdsc 9](https://user-images.githubusercontent.com/127089397/229853443-973f4d6f-6cc9-4366-9548-33d1532d1bf7.png)
+![Screenshot_20230404-221010_Chrome](https://user-images.githubusercontent.com/127089397/229859905-418e2c4f-2f73-4346-9d19-643dfe42db7f.jpg)
+
 # Challenges faced
 1)When we were making login and sign up page then one of the major challenges was to store user data in real-time and show it when they login. We used Firebase for storing the user data. Firebase authentication and Firebase real-time database feature is used for the backend development of the sign up and login page.
 2)The other challenge was to make website with proper responsiveness for desktop and mobile.
