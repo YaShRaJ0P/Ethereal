@@ -28,5 +28,6 @@ In this section we have provided detail about different sustainable products whi
 In this section we have provided details about the local shops which sell sustainable products .Their location is provided on google maps. When user select their city then all the local seller who sell sustainable product in their city their location is shown on the maps. 
 # Challenges faced
 1)When we were making login and sign up page then one of the major challenges was to store user data in real-time and show it when they login. We used Firebase for storing the user data. Firebase authentication and Firebase real-time database feature is used for the backend development of the sign up and login page.
-2)	
+
+
 https://user-images.githubusercontent.com/127089397/229849677-4af06543-4a7a-47c2-bdbb-d760eccee037.png
