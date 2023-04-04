@@ -9,12 +9,12 @@ var defaultThreads = [
             {
                 author: "Sushil",
                 date: Date.now(),
-                content: "because it is LED."
+                content: "It improves your health, protects enviornment."
             },
             {
                 author: "Vicky",
                 date: Date.now(),
-                content: "Because I like LED."
+                content: "It saves your money."
             }
         ]
     },
