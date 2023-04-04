@@ -9,6 +9,10 @@ ETHEREAL is made using
 5)Google Maps.
  It is equipped With a wealth of information and has different sections related to sustainable living .
 ![](https://user-images.githubusercontent.com/127089397/229849677-4af06543-4a7a-47c2-bdbb-d760eccee037.png)
+![Screenshot gdsc 8](https://user-images.githubusercontent.com/127089397/229853388-9d2577fd-14a6-4108-bea0-64a538c87f40.png)
+![Screenshot gdsc 9](https://user-images.githubusercontent.com/127089397/229853443-973f4d6f-6cc9-4366-9548-33d1532d1bf7.png)
+![Screenshot gdsc 6](https://user-images.githubusercontent.com/127089397/229853513-9937089e-abcf-4c90-b848-d352cdb86f6d.png)
+
 # General awareness
 In this section we have provided general information on small changes that we can bring in our daily lifestyle which can help us live a sustainable life.
 # Latest Technology 
