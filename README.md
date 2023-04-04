@@ -17,6 +17,9 @@ In this section we have provided general information on small changes that we ca
 ![Screenshot_20230404-220653_Chrome](https://user-images.githubusercontent.com/127089397/229859081-fc102cec-eca2-4b54-b19d-fab479c13229.jpg)
 # Latest Technology 
 In this section we have provided detail about the latest technology which are available in the world helping to preserve environment and lowering the pollution level in the world.
+![Screenshot_20230404-224926_Chrome](https://user-images.githubusercontent.com/127089397/229869466-a955993a-90bc-41ab-9afa-e758e42442d8.jpg)
+![Screenshot_20230404-225004_Chrome](https://user-images.githubusercontent.com/127089397/229869502-093b848d-d48c-40ce-b3a3-20c2e6241309.jpg)
+![Screenshot_20230404-225033_Chrome](https://user-images.githubusercontent.com/127089397/229869527-7f4110ce-adbf-4fd2-9c5a-2fe8b5e11678.jpg)
 #Waste Management 
 In this section we have provided details about the ways in which we can reduce waste in our homes and society.
 # Power saving gadgets 
