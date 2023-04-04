@@ -62,6 +62,9 @@ In this section we have provided details about the local shops which sell sustai
 
 # Discussion Forum
 Another great feature of the website is its discussion forum, In discussion form a person can ask question related to sustainable living and another person can give reply to that question. This allows people to share their knowledge on sustainable living to other person.
+![Screenshot_20230405-014553_Chrome](https://user-images.githubusercontent.com/127089397/229910532-ecf70eaf-08ae-41e4-adeb-4a802c4b2316.jpg)
+![Screenshot_20230405-014616_Chrome](https://user-images.githubusercontent.com/127089397/229910551-9726125f-0f07-4af9-a988-140cd7cf8cc2.jpg)
+![Screenshot_20230405-014645_Chrome](https://user-images.githubusercontent.com/127089397/229910572-a7bfb4d5-8a6d-4f2a-916e-a4b186bfaf3d.jpg)
 # Challenges faced
 1)When we were making login and sign up page then one of the major challenges was to store user data in real-time and show it when they login. We used Firebase for storing the user data. Firebase authentication and Firebase real-time database feature is used for the backend development of the sign up and login page.
 
