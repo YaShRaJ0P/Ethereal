@@ -20,7 +20,7 @@ In this section we have provided detail about the latest technology which are av
 ![Screenshot_20230404-224926_Chrome](https://user-images.githubusercontent.com/127089397/229869466-a955993a-90bc-41ab-9afa-e758e42442d8.jpg)
 ![Screenshot_20230404-225004_Chrome](https://user-images.githubusercontent.com/127089397/229869502-093b848d-d48c-40ce-b3a3-20c2e6241309.jpg)
 ![Screenshot_20230404-225033_Chrome](https://user-images.githubusercontent.com/127089397/229869527-7f4110ce-adbf-4fd2-9c5a-2fe8b5e11678.jpg)
-#Waste Management 
+# Waste Management 
 In this section we have provided details about the ways in which we can reduce waste in our homes and society.
 # Power saving gadgets 
 In this section we have provided details about the Power saving appliances available in the market with which we can replace our old appliance.
@@ -44,7 +44,7 @@ In this section we have provided details about the local shops which sell sustai
 # Challenges faced
 1)When we were making login and sign up page then one of the major challenges was to store user data in real-time and show it when they login. We used Firebase for storing the user data. Firebase authentication and Firebase real-time database feature is used for the backend development of the sign up and login page.
 2)The other challenge was to make website with proper responsiveness for desktop and mobile.
-3)
+
 
 
 
