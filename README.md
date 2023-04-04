@@ -29,6 +29,10 @@ In this section we have provided details about the ways in which we can reduce w
 
 # Power saving gadgets 
 In this section we have provided details about the Power saving appliances available in the market with which we can replace our old appliance.
+![Screenshot_20230404-231522_Chrome](https://user-images.githubusercontent.com/127089397/229875268-1c52940c-2b0c-41bf-b736-95b5fec2892d.jpg)
+![Screenshot_20230404-231552_Chrome](https://user-images.githubusercontent.com/127089397/229875308-eb52d9be-d923-4d1c-98a0-d7934377de0a.jpg)
+![Screenshot_20230404-231627_Chrome](https://user-images.githubusercontent.com/127089397/229875341-2117b03a-4963-4d88-bbac-d474f12b778d.jpg)
+
 # Water Conservation 
 In this section we have provided different ways by which we can conserve water in our homes and society.
 ![Screenshot gdsc 6](https://user-images.githubusercontent.com/127089397/229853513-9937089e-abcf-4c90-b848-d352cdb86f6d.png)
