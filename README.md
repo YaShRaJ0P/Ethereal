@@ -9,7 +9,6 @@ ETHEREAL is made using
 5)Google Maps.
  It is equipped With a wealth of information and has different sections related to sustainable living .
 ![](https://user-images.githubusercontent.com/127089397/229849677-4af06543-4a7a-47c2-bdbb-d760eccee037.png)
-![Screenshot gdsc 8](https://user-images.githubusercontent.com/127089397/229853388-9d2577fd-14a6-4108-bea0-64a538c87f40.png)
 
 # General awareness
 In this section we have provided general information on small changes that we can bring in our daily lifestyle which can help us live a sustainable life.
@@ -21,6 +20,7 @@ In this section we have provided details about the ways in which we can reduce w
 In this section we have provided details about the Power saving appliances available in the market with which we can replace our old appliance.
 # Water Conservation 
 In this section we have provided different ways by which we can conserve water in our homes and society.
+![Screenshot gdsc 6](https://user-images.githubusercontent.com/127089397/229853513-9937089e-abcf-4c90-b848-d352cdb86f6d.png)
 # Nature conservation
 In this section we have provided details about different ways by which we can conserve nature and lead  a sustainable life.
 # Sign up /Sign in 
@@ -30,7 +30,7 @@ In this section we have provided detail about different sustainable products whi
 ![Screenshot gdsc 9](https://user-images.githubusercontent.com/127089397/229853443-973f4d6f-6cc9-4366-9548-33d1532d1bf7.png)
 # Shops Nearby section
 In this section we have provided details about the local shops which sell sustainable products .Their location is provided on google maps. When user select their city then all the local seller who sell sustainable product in their city their location is shown on the maps. 
-![Screenshot gdsc 6](https://user-images.githubusercontent.com/127089397/229853513-9937089e-abcf-4c90-b848-d352cdb86f6d.png)
+![Screenshot gdsc 8](https://user-images.githubusercontent.com/127089397/229853388-9d2577fd-14a6-4108-bea0-64a538c87f40.png)
 # Challenges faced
 1)When we were making login and sign up page then one of the major challenges was to store user data in real-time and show it when they login. We used Firebase for storing the user data. Firebase authentication and Firebase real-time database feature is used for the backend development of the sign up and login page.
 
