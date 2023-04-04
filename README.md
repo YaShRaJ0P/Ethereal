@@ -60,6 +60,8 @@ In this section we have provided details about the local shops which sell sustai
 ![Screenshot gdsc 9](https://user-images.githubusercontent.com/127089397/229853443-973f4d6f-6cc9-4366-9548-33d1532d1bf7.png)
 ![Screenshot_20230404-221010_Chrome](https://user-images.githubusercontent.com/127089397/229859905-418e2c4f-2f73-4346-9d19-643dfe42db7f.jpg)
 
+# Discussion Forum
+Another great feature of the website is its discussion forum, In discussion form a person can ask question related to sustainable living and another person can give reply to that question. This allows people to share their knowledge on sustainable living to other person.
 # Challenges faced
 1)When we were making login and sign up page then one of the major challenges was to store user data in real-time and show it when they login. We used Firebase for storing the user data. Firebase authentication and Firebase real-time database feature is used for the backend development of the sign up and login page.
 
