@@ -42,6 +42,10 @@ In this section we have provided different ways by which we can conserve water i
 
 # Nature conservation
 In this section we have provided details about different ways by which we can conserve nature and lead  a sustainable life.
+![Screenshot_20230404-232238_Chrome](https://user-images.githubusercontent.com/127089397/229878352-a35b3ecf-64eb-4eb7-b2fd-f3f4b5ef29ac.jpg)
+![Screenshot_20230404-232306_Chrome](https://user-images.githubusercontent.com/127089397/229878389-34341091-0398-4d43-ac62-c9ddb0e842ee.jpg)
+![Screenshot_20230404-232327_Chrome](https://user-images.githubusercontent.com/127089397/229878424-a0689cf0-3b1a-4cd9-a2d6-161744ec4f04.jpg)
+
 # Sign up /Sign in 
 By clicking on sign in/sign up button user is directed to sign in and sign up page where user can sign up by providing their username , Email and Password . When they click on sign up there data is being saved in firebase and they are directed to homepage where there user name is being displayed and a logout option is also displayed .On clicking on logout button they can sign out. Moreover now if anytime they want to sign in to their account again they just need to login by providing their email id and password. We have even put Forgot password option if user forget their password then they are 
 ![Screenshot gdsc 10](https://user-images.githubusercontent.com/127089397/229868384-107a2242-3f93-41e8-b28e-aed16c8f5c47.png)
