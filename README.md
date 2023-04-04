@@ -22,6 +22,11 @@ In this section we have provided detail about the latest technology which are av
 ![Screenshot_20230404-225033_Chrome](https://user-images.githubusercontent.com/127089397/229869527-7f4110ce-adbf-4fd2-9c5a-2fe8b5e11678.jpg)
 # Waste Management 
 In this section we have provided details about the ways in which we can reduce waste in our homes and society.
+
+![Screenshot_20230404-225637_Chrome](https://user-images.githubusercontent.com/127089397/229871009-2ec27d36-888b-4ef7-8299-face623662e7.jpg)
+![Screenshot_20230404-225708_Chrome](https://user-images.githubusercontent.com/127089397/229871038-b20b57e9-a832-4f1b-af06-829266c1caf5.jpg)
+![Screenshot_20230404-225738_Chrome](https://user-images.githubusercontent.com/127089397/229871065-268969fe-847d-44a2-a22a-58f5a8eb4294.jpg)
+
 # Power saving gadgets 
 In this section we have provided details about the Power saving appliances available in the market with which we can replace our old appliance.
 # Water Conservation 
