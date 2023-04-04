@@ -10,8 +10,6 @@ ETHEREAL is made using
  It is equipped With a wealth of information and has different sections related to sustainable living .
 ![](https://user-images.githubusercontent.com/127089397/229849677-4af06543-4a7a-47c2-bdbb-d760eccee037.png)
 ![Screenshot gdsc 8](https://user-images.githubusercontent.com/127089397/229853388-9d2577fd-14a6-4108-bea0-64a538c87f40.png)
-![Screenshot gdsc 9](https://user-images.githubusercontent.com/127089397/229853443-973f4d6f-6cc9-4366-9548-33d1532d1bf7.png)
-![Screenshot gdsc 6](https://user-images.githubusercontent.com/127089397/229853513-9937089e-abcf-4c90-b848-d352cdb86f6d.png)
 
 # General awareness
 In this section we have provided general information on small changes that we can bring in our daily lifestyle which can help us live a sustainable life.
@@ -29,8 +27,10 @@ In this section we have provided details about different ways by which we can co
 By clicking on sign in/sign up button user is directed to sign in and sign up page where user can sign up by providing their username , Email and Password . When they click on sign up there data is being saved in firebase and they are directed to homepage where there user name is being displayed and a logout option is also displayed on clicking by which they can sign out. Moreover now if anytime they want to sign in to their account again they just need to login by providing their email id and password. We have even put Forgot password option if user forget their password then they are 
 # Products
 In this section we have provided detail about different sustainable products which user can buy by clicking on buy button .They will be directed to e-commerce website from where they can purchase the selected product.
+![Screenshot gdsc 9](https://user-images.githubusercontent.com/127089397/229853443-973f4d6f-6cc9-4366-9548-33d1532d1bf7.png)
 # Shops Nearby section
 In this section we have provided details about the local shops which sell sustainable products .Their location is provided on google maps. When user select their city then all the local seller who sell sustainable product in their city their location is shown on the maps. 
+![Screenshot gdsc 6](https://user-images.githubusercontent.com/127089397/229853513-9937089e-abcf-4c90-b848-d352cdb86f6d.png)
 # Challenges faced
 1)When we were making login and sign up page then one of the major challenges was to store user data in real-time and show it when they login. We used Firebase for storing the user data. Firebase authentication and Firebase real-time database feature is used for the backend development of the sign up and login page.
 
