@@ -14,7 +14,6 @@ ETHEREAL is made using
 In this section we have provided general information on small changes that we can bring in our daily lifestyle which can help us live a sustainable life.
 ![Screenshot_20230404-220230_Chrome](https://user-images.githubusercontent.com/127089397/229858084-97506472-ba3c-4890-b69f-75611fd8121d.jpg)
 ![Screenshot_20230404-220617_Chrome](https://user-images.githubusercontent.com/127089397/229858986-d86f6f9c-3056-45d9-8e94-d51225dadb79.jpg)
-![Screenshot_20230404-220636_Chrome](https://user-images.githubusercontent.com/127089397/229859049-0a839349-c850-44af-a199-3b552f12da1b.jpg)
 ![Screenshot_20230404-220653_Chrome](https://user-images.githubusercontent.com/127089397/229859081-fc102cec-eca2-4b54-b19d-fab479c13229.jpg)
 # Latest Technology 
 In this section we have provided detail about the latest technology which are available in the world helping to preserve environment and lowering the pollution level in the world.
@@ -29,6 +28,8 @@ In this section we have provided different ways by which we can conserve water i
 In this section we have provided details about different ways by which we can conserve nature and lead  a sustainable life.
 # Sign up /Sign in 
 By clicking on sign in/sign up button user is directed to sign in and sign up page where user can sign up by providing their username , Email and Password . When they click on sign up there data is being saved in firebase and they are directed to homepage where there user name is being displayed and a logout option is also displayed .On clicking on logout button they can sign out. Moreover now if anytime they want to sign in to their account again they just need to login by providing their email id and password. We have even put Forgot password option if user forget their password then they are 
+![Screenshot gdsc 10](https://user-images.githubusercontent.com/127089397/229868384-107a2242-3f93-41e8-b28e-aed16c8f5c47.png)
+
 # Products
 In this section we have provided detail about different sustainable products which user can buy by clicking on buy button .They will be directed to e-commerce website from where they can purchase the selected product.
 ![Screenshot gdsc 8](https://user-images.githubusercontent.com/127089397/229853388-9d2577fd-14a6-4108-bea0-64a538c87f40.png)
