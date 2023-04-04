@@ -35,7 +35,11 @@ In this section we have provided details about the Power saving appliances avail
 
 # Water Conservation 
 In this section we have provided different ways by which we can conserve water in our homes and society.
-![Screenshot gdsc 6](https://user-images.githubusercontent.com/127089397/229853513-9937089e-abcf-4c90-b848-d352cdb86f6d.png)
+
+![Screenshot_20230404-231954_Chrome](https://user-images.githubusercontent.com/127089397/229877927-55142024-d669-41b1-b1dc-c9369102dd8a.jpg)
+![Screenshot_20230404-232110_Chrome](https://user-images.githubusercontent.com/127089397/229877969-093c74a4-2d4b-4395-a4df-0a17ffd8a15c.jpg)
+![Screenshot_20230404-232137_Chrome](https://user-images.githubusercontent.com/127089397/229878007-3e8f11e8-6607-479a-b708-3434a0b02ea2.jpg)
+
 # Nature conservation
 In this section we have provided details about different ways by which we can conserve nature and lead  a sustainable life.
 # Sign up /Sign in 
