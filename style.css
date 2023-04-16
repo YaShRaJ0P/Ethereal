@@ -158,14 +158,19 @@
     }
 
   /*Latest Technology*/
-
+  .carousel-caption{
+    color: #0022aa !important;
+    font-weight: 800 !important;
+  }
 .view{
   text-decoration: none;
 }
 .view:hover{
   color: #fff;
 }
-
+.carousel-title{
+  font-weight: 800;
+}
   .carousel-item{
     max-height: 600px;
   }
